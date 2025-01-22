@@ -13,6 +13,7 @@
           "Asp.Versioning.Mvc.ApiExplorer": "6.4.0",
           "Carter": "6.1.1",
           "ClosedXML": "0.95.0-beta2",
+          "CustomerLibrary": "1.0.0",
           "Dapper": "2.0.123",
           "EPPlus": "6.0.8",
           "ERPServer.DataAccess": "1.0.0",
@@ -33,8 +34,7 @@
           "System.Data.DataSetExtensions": "4.5.0",
           "System.Data.SqlClient": "4.8.4",
           "iTextSharp": "5.5.13.3",
-          "openexr-msvc-x64": "2.3.0.8788",
-          "CustomerLibrary": "1.0.0.0"
+          "openexr-msvc-x64": "2.3.0.8788"
         },
         "runtime": {
           "ERPServer.dll": {}
@@ -146,6 +146,28 @@
           "lib/net6.0/CsvHelper.dll": {
             "assemblyVersion": "29.0.0.0",
             "fileVersion": "29.0.0.0"
+          }
+        }
+      },
+      "CustomerLibrary/1.0.0": {
+        "dependencies": {
+          "Asp.Versioning.Http": "6.5.0",
+          "Asp.Versioning.Mvc": "6.4.1",
+          "Asp.Versioning.Mvc.ApiExplorer": "6.4.0",
+          "Carter": "6.1.1",
+          "Dapper": "2.0.123",
+          "ERPServer.DataAccess": "1.0.0",
+          "ImsPosLibraryCore.BusinessModels": "1.0.0",
+          "ImsPosLibraryCore.Models": "1.0.0",
+          "MediatR": "12.0.1",
+          "MediatR.Extensions.Microsoft.DependencyInjection": "11.0.0",
+          "Newtonsoft.Json": "13.0.1",
+          "System.Data.SqlClient": "4.8.4"
+        },
+        "runtime": {
+          "lib/net6.0/CustomerLibrary.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -414,6 +436,18 @@
           "lib/netstandard2.0/MediatR.Contracts.dll": {
             "assemblyVersion": "2.0.1.0",
             "fileVersion": "2.0.1.0"
+          }
+        }
+      },
+      "MediatR.Extensions.Microsoft.DependencyInjection/11.0.0": {
+        "dependencies": {
+          "MediatR": "12.0.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/MediatR.Extensions.Microsoft.DependencyInjection.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.0.0"
           }
         }
       },
@@ -3809,14 +3843,6 @@
         "runtime": {
           "ImsPosLibraryCore.Models.dll": {}
         }
-      },
-      "CustomerLibrary/1.0.0.0": {
-        "runtime": {
-          "CustomerLibrary.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
       }
     }
   },
@@ -3895,6 +3921,13 @@
       "sha512": "sha512-xFuirk+7GbrGPM5u6shRDmFLHnPFTODEydI+Ed0mD1tJwpJeBPH6j668JhoAJglYt+EfhR/hQNGHPQ+RKjU6uA==",
       "path": "csvhelper/29.0.0",
       "hashPath": "csvhelper.29.0.0.nupkg.sha512"
+    },
+    "CustomerLibrary/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5Aoi9yk6mEcb4yXKBrtIpBeMsuMZdruP2TmYg6+o8BrOTCnyvPCUVK1EwSCVVyPe9gKWW6qZBo6Oz/eSFSyMUA==",
+      "path": "customerlibrary/1.0.0",
+      "hashPath": "customerlibrary.1.0.0.nupkg.sha512"
     },
     "Dapper/2.0.123": {
       "type": "package",
@@ -4035,6 +4068,13 @@
       "sha512": "sha512-FYv95bNT4UwcNA+G/J1oX5OpRiSUxteXaUt2BJbRSdRNiIUNbggJF69wy6mnk2wYToaanpdXZdCwVylt96MpwQ==",
       "path": "mediatr.contracts/2.0.1",
       "hashPath": "mediatr.contracts.2.0.1.nupkg.sha512"
+    },
+    "MediatR.Extensions.Microsoft.DependencyInjection/11.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jfD2NBYvP+HiUil2DWfM4bn+bCLp4H2xvoc9aorcnn2Jpgz7Ey8RyYMpgqeF3bs6CP6t8pzb6WkF5NFF/1RLHA==",
+      "path": "mediatr.extensions.microsoft.dependencyinjection/11.0.0",
+      "hashPath": "mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512"
     },
     "MessagePack/2.1.152": {
       "type": "package",
@@ -6028,11 +6068,6 @@
     },
     "ImsPosLibraryCore.Models/1.0.0": {
       "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "CustomerLibrary/1.0.0.0": {
-      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }
