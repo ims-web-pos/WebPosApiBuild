@@ -3925,7 +3925,7 @@
     "CustomerLibrary/1.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-3PwDx9dZixPa+dp+hYmDouyQuercmGroR0Uj9D/MEXm+mLH81AdRbnVjZeLCFADOTSoBDVcPzUylZi8vvX9Rfg==",
+      "sha512": "sha512-eGbJaM+tlEkltl476vBcsbxFjeiCt9y3kNrnvHy12iGDSGSp5D18VQdLHPx51jbGXt2prJ2Lg+64IcyxAGVGkg==",
       "path": "customerlibrary/1.0.0",
       "hashPath": "customerlibrary.1.0.0.nupkg.sha512"
     },
