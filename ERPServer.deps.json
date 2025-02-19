@@ -12,7 +12,7 @@
           "Asp.Versioning.Mvc": "6.4.1",
           "Asp.Versioning.Mvc.ApiExplorer": "6.4.0",
           "Carter": "6.1.1",
-          "ClosedXML": "0.95.0-beta2",
+          "ClosedXML": "0.104.2",
           "CustomerLibrary": "1.0.0",
           "Dapper": "2.0.123",
           "EPPlus": "6.0.8",
@@ -99,17 +99,26 @@
           }
         }
       },
-      "ClosedXML/0.95.0-beta2": {
+      "ClosedXML/0.104.2": {
         "dependencies": {
-          "DocumentFormat.OpenXml": "2.7.2",
-          "ExcelNumberFormat": "1.0.3",
-          "FastMember": "1.3.0",
-          "System.Drawing.Common": "6.0.0"
+          "ClosedXML.Parser": "1.2.0",
+          "DocumentFormat.OpenXml": "3.1.1",
+          "ExcelNumberFormat": "1.1.0",
+          "RBush": "4.0.0",
+          "SixLabors.Fonts": "1.0.0"
         },
         "runtime": {
-          "lib/netstandard2.0/ClosedXML.dll": {
-            "assemblyVersion": "0.95.0.0",
-            "fileVersion": "0.95.0.1826"
+          "lib/netstandard2.1/ClosedXML.dll": {
+            "assemblyVersion": "0.104.2.0",
+            "fileVersion": "0.104.2.0"
+          }
+        }
+      },
+      "ClosedXML.Parser/1.2.0": {
+        "runtime": {
+          "lib/netstandard2.1/ClosedXML.Parser.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -191,15 +200,25 @@
           }
         }
       },
-      "DocumentFormat.OpenXml/2.7.2": {
+      "DocumentFormat.OpenXml/3.1.1": {
         "dependencies": {
-          "NETStandard.Library": "1.6.1",
-          "System.IO.Packaging": "4.0.0"
+          "DocumentFormat.OpenXml.Framework": "3.1.1"
         },
         "runtime": {
-          "lib/netstandard1.3/DocumentFormat.OpenXml.dll": {
-            "assemblyVersion": "2.7.2.0",
-            "fileVersion": "2.7.2.0"
+          "lib/netstandard2.0/DocumentFormat.OpenXml.dll": {
+            "assemblyVersion": "3.1.1.0",
+            "fileVersion": "3.1.1.0"
+          }
+        }
+      },
+      "DocumentFormat.OpenXml.Framework/3.1.1": {
+        "dependencies": {
+          "System.IO.Packaging": "8.0.1"
+        },
+        "runtime": {
+          "lib/net6.0/DocumentFormat.OpenXml.Framework.dll": {
+            "assemblyVersion": "3.1.1.0",
+            "fileVersion": "3.1.1.0"
           }
         }
       },
@@ -258,36 +277,11 @@
           }
         }
       },
-      "ExcelNumberFormat/1.0.3": {
-        "dependencies": {
-          "NETStandard.Library": "1.6.1"
-        },
+      "ExcelNumberFormat/1.1.0": {
         "runtime": {
-          "lib/netstandard1.0/ExcelNumberFormat.dll": {
-            "assemblyVersion": "1.0.3.0",
-            "fileVersion": "1.0.3.0"
-          }
-        }
-      },
-      "FastMember/1.3.0": {
-        "dependencies": {
-          "Microsoft.CSharp": "4.7.0",
-          "System.Collections.NonGeneric": "4.3.0",
-          "System.Data.Common": "4.3.0",
-          "System.Data.SqlClient": "4.8.4",
-          "System.Linq": "4.3.0",
-          "System.Reflection": "4.3.0",
-          "System.Reflection.Emit": "4.6.0",
-          "System.Reflection.Emit.ILGeneration": "4.3.0",
-          "System.Reflection.Emit.Lightweight": "4.6.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Threading": "4.3.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/FastMember.dll": {
-            "assemblyVersion": "1.3.0.0",
-            "fileVersion": "1.3.0.0"
+          "lib/netstandard2.0/ExcelNumberFormat.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.0.0"
           }
         }
       },
@@ -2482,6 +2476,14 @@
           }
         }
       },
+      "RBush/4.0.0": {
+        "runtime": {
+          "lib/netstandard2.0/RBush.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
@@ -2561,6 +2563,14 @@
             "rid": "win-x86",
             "assetType": "native",
             "fileVersion": "4.6.25512.1"
+          }
+        }
+      },
+      "SixLabors.Fonts/1.0.0": {
+        "runtime": {
+          "lib/netcoreapp3.1/SixLabors.Fonts.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -2836,18 +2846,6 @@
           "System.Text.Encoding": "4.3.0"
         }
       },
-      "System.Data.Common/4.3.0": {
-        "dependencies": {
-          "System.Collections": "4.3.0",
-          "System.Globalization": "4.3.0",
-          "System.IO": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Text.RegularExpressions": "4.3.0",
-          "System.Threading.Tasks": "4.3.0"
-        }
-      },
       "System.Data.DataSetExtensions/4.5.0": {},
       "System.Data.SqlClient/4.8.4": {
         "dependencies": {
@@ -3044,25 +3042,11 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.IO.Packaging/4.0.0": {
-        "dependencies": {
-          "System.Collections": "4.3.0",
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Globalization": "4.3.0",
-          "System.IO": "4.3.0",
-          "System.IO.Compression": "4.3.0",
-          "System.IO.FileSystem": "4.3.0",
-          "System.IO.FileSystem.Primitives": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Text.Encoding": "4.3.0",
-          "System.Xml.ReaderWriter": "4.3.0"
-        },
+      "System.IO.Packaging/8.0.1": {
         "runtime": {
-          "lib/netstandard1.3/System.IO.Packaging.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "1.0.24212.1"
+          "lib/net6.0/System.IO.Packaging.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.1024.46610"
           }
         }
       },
@@ -3765,7 +3749,7 @@
       },
       "ERPServer.DataAccess/1.0.0": {
         "dependencies": {
-          "ClosedXML": "0.95.0-beta2",
+          "ClosedXML": "0.104.2",
           "ERPServer.Models": "1.0.0",
           "ExcelDataReader": "3.6.0",
           "ExcelDataReader.DataSet": "3.6.0",
@@ -3913,12 +3897,19 @@
       "path": "carter/6.1.1",
       "hashPath": "carter.6.1.1.nupkg.sha512"
     },
-    "ClosedXML/0.95.0-beta2": {
+    "ClosedXML/0.104.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-4CKDYxDiJ/P5XCR3wtK8jySm6x1zTzcG7fdeWf42ZaW02XC1Kquyd2dLJZZcJnAMgyv4qmUkLcxRz2IBaooO0Q==",
-      "path": "closedxml/0.95.0-beta2",
-      "hashPath": "closedxml.0.95.0-beta2.nupkg.sha512"
+      "sha512": "sha512-gOkSjQ152MhpKmw70cBkJV+FnaZAWzDwM36luRf/7FlWYnNeH++9XYdGTd0Y4KQlVPkKVxy948M5MMsnsGC4GQ==",
+      "path": "closedxml/0.104.2",
+      "hashPath": "closedxml.0.104.2.nupkg.sha512"
+    },
+    "ClosedXML.Parser/1.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-w+/0tsxABS3lkSH8EUlA7IGme+mq5T/Puf3DbOiTckmSuUpAUO2LK29oXYByCcWkBv6wcRHxgWlQb1lxkwI0Tw==",
+      "path": "closedxml.parser/1.2.0",
+      "hashPath": "closedxml.parser.1.2.0.nupkg.sha512"
     },
     "Common.Logging/3.4.1": {
       "type": "package",
@@ -3962,12 +3953,19 @@
       "path": "dapper.contrib/2.0.78",
       "hashPath": "dapper.contrib.2.0.78.nupkg.sha512"
     },
-    "DocumentFormat.OpenXml/2.7.2": {
+    "DocumentFormat.OpenXml/3.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-tWT7iu0ab9PNoMTWjv24rt+qnyqvcnPOYs167vPnk4aegAYSAxoUjwNW+VxY8xoLtJntQ/JlWTi7Vt+8TghLlQ==",
-      "path": "documentformat.openxml/2.7.2",
-      "hashPath": "documentformat.openxml.2.7.2.nupkg.sha512"
+      "sha512": "sha512-2z9QBzeTLNNKWM9SaOSDMegfQk/7hDuElOsmF77pKZMkFRP/GHA/W/4yOAQD9kn15N/FsFxHn3QVYkatuZghiA==",
+      "path": "documentformat.openxml/3.1.1",
+      "hashPath": "documentformat.openxml.3.1.1.nupkg.sha512"
+    },
+    "DocumentFormat.OpenXml.Framework/3.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6APEp/ElZV58S/4v8mf4Ke3ONEDORs64MqdD64Z7wWpcHANB9oovQsGIwtqjnKihulOj7T0a6IxHIHOfMqKOng==",
+      "path": "documentformat.openxml.framework/3.1.1",
+      "hashPath": "documentformat.openxml.framework.3.1.1.nupkg.sha512"
     },
     "EPPlus/6.0.8": {
       "type": "package",
@@ -4004,19 +4002,12 @@
       "path": "exceldatareader.dataset/3.6.0",
       "hashPath": "exceldatareader.dataset.3.6.0.nupkg.sha512"
     },
-    "ExcelNumberFormat/1.0.3": {
+    "ExcelNumberFormat/1.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ZPF7p4+qUJA6KKHoCTbzCEFZ0G4U8g3lusma5MFNy+NSqR165Z16Z5c1vRE/pKfQxVNGkGHfJtj/xmArenwj/w==",
-      "path": "excelnumberformat/1.0.3",
-      "hashPath": "excelnumberformat.1.0.3.nupkg.sha512"
-    },
-    "FastMember/1.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-AmB/DQoEvpbs6zDUjOk0pRhewKrvhZ+8mSK/8GrcmvkX7/HKjJxXtosmu5AXE9Lxw5cSZ0onnl27bb9J3bcp1A==",
-      "path": "fastmember/1.3.0",
-      "hashPath": "fastmember.1.3.0.nupkg.sha512"
+      "sha512": "sha512-R3BVHPs9O+RkExbZYTGT0+9HLbi8ZrNij1Yziyw6znd3J7P3uoIR07uwTLGOogtz1p6+0sna66eBoXu7tBiVQA==",
+      "path": "excelnumberformat/1.1.0",
+      "hashPath": "excelnumberformat.1.1.0.nupkg.sha512"
     },
     "FluentValidation/10.3.4": {
       "type": "package",
@@ -5124,6 +5115,13 @@
       "path": "portable.bouncycastle/1.9.0",
       "hashPath": "portable.bouncycastle.1.9.0.nupkg.sha512"
     },
+    "RBush/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-j3GeRxxLUQdc+UrZnvythdQxi3bd8ayn87VDjfGXrvfodF550n9wR6SgQvpo+YiAv3GJezsu6lK0l47rRqnbdg==",
+      "path": "rbush/4.0.0",
+      "hashPath": "rbush.4.0.0.nupkg.sha512"
+    },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -5263,6 +5261,13 @@
       "sha512": "sha512-YhEdSQUsTx+C8m8Bw7ar5/VesXvCFMItyZF7G1AUY+OM0VPZUOeAVpJ4Wl6fydBGUYZxojTDR3I6Bj/+BPkJNA==",
       "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
       "hashPath": "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
+    },
+    "SixLabors.Fonts/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LFQsCZlV0xlUyXAOMUo5kkSl+8zAQXXbbdwWchtk0B4o7zotZhQsQOcJUELGHdfPfm/xDAsz6hONAuV25bJaAg==",
+      "path": "sixlabors.fonts/1.0.0",
+      "hashPath": "sixlabors.fonts.1.0.0.nupkg.sha512"
     },
     "Slapper.AutoMapper/2.0.5": {
       "type": "package",
@@ -5439,13 +5444,6 @@
       "path": "system.console/4.3.0",
       "hashPath": "system.console.4.3.0.nupkg.sha512"
     },
-    "System.Data.Common/4.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-lm6E3T5u7BOuEH0u18JpbJHxBfOJPuCyl4Kg1RH10ktYLp5uEEE1xKrHW56/We4SnZpGAuCc9N0MJpSDhTHZGQ==",
-      "path": "system.data.common/4.3.0",
-      "hashPath": "system.data.common.4.3.0.nupkg.sha512"
-    },
     "System.Data.DataSetExtensions/4.5.0": {
       "type": "package",
       "serviceable": true,
@@ -5572,12 +5570,12 @@
       "path": "system.io.filesystem.primitives/4.3.0",
       "hashPath": "system.io.filesystem.primitives.4.3.0.nupkg.sha512"
     },
-    "System.IO.Packaging/4.0.0": {
+    "System.IO.Packaging/8.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-taPqPWcAj/h6e/c+zIWIVe1ddJtpV6acC6g9GpolxUcIwUaH6zc0ZbFS8kkVzBkuWv76pMalKeTzfmHtfT1pXA==",
-      "path": "system.io.packaging/4.0.0",
-      "hashPath": "system.io.packaging.4.0.0.nupkg.sha512"
+      "sha512": "sha512-KYkIOAvPexQOLDxPO2g0BVoWInnQhPpkFzRqvNrNrMhVT6kqhVr0zEb6KCHlptLFukxnZrjuMVAnxK7pOGUYrw==",
+      "path": "system.io.packaging/8.0.1",
+      "hashPath": "system.io.packaging.8.0.1.nupkg.sha512"
     },
     "System.IO.Pipelines/5.0.1": {
       "type": "package",
