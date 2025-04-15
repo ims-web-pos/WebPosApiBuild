@@ -3650,7 +3650,10 @@
           "iTextSharp": "5.5.13.3"
         },
         "runtime": {
-          "ERPServer.DataAccess.dll": {}
+          "ERPServer.DataAccess.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "ERPServer.Models/1.0.0": {
@@ -3663,7 +3666,10 @@
           "System.Data.DataSetExtensions": "4.5.0"
         },
         "runtime": {
-          "ERPServer.Models.dll": {}
+          "ERPServer.Models.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "ImsPosLibraryCore.BusinessModels/1.0.0": {
@@ -3676,7 +3682,10 @@
           "System.Data.DataSetExtensions": "4.5.0"
         },
         "runtime": {
-          "ImsPosLibraryCore.BusinessModels.dll": {}
+          "ImsPosLibraryCore.BusinessModels.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "ImsPosLibraryCore.Core/1.0.0": {
@@ -3690,7 +3699,10 @@
           "System.Data.DataSetExtensions": "4.5.0"
         },
         "runtime": {
-          "ImsPosLibraryCore.Core.dll": {}
+          "ImsPosLibraryCore.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "ImsPosLibraryCore.DataAccessLayer/1.0.0": {
@@ -3702,7 +3714,10 @@
           "System.Data.DataSetExtensions": "4.5.0"
         },
         "runtime": {
-          "ImsPosLibraryCore.DataAccessLayer.dll": {}
+          "ImsPosLibraryCore.DataAccessLayer.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "ImsPosLibraryCore.Helper/1.0.0": {
@@ -3715,7 +3730,10 @@
           "System.Data.SqlClient": "4.8.4"
         },
         "runtime": {
-          "ImsPosLibraryCore.Helper.dll": {}
+          "ImsPosLibraryCore.Helper.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "ImsPosLibraryCore.Models/1.0.0": {
@@ -3728,7 +3746,10 @@
           "System.Data.SqlClient": "4.8.4"
         },
         "runtime": {
-          "ImsPosLibraryCore.Models.dll": {}
+          "ImsPosLibraryCore.Models.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
