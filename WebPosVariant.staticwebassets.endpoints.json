@@ -2627,6 +2627,88 @@
       ]
     },
     {
+      "Route": "assets/VoucherFormats/TaxInvoice.ims",
+      "AssetFile": "assets/VoucherFormats/TaxInvoice.ims",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "70422"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dAKc3q5a+WPwtq/fzkAPno8PL8rmeXFOxEUD8ioy7p8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 17 Dec 2023 05:41:59 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dAKc3q5a+WPwtq/fzkAPno8PL8rmeXFOxEUD8ioy7p8="
+        }
+      ]
+    },
+    {
+      "Route": "assets/VoucherFormats/TaxInvoice.o9f9kht03w.ims",
+      "AssetFile": "assets/VoucherFormats/TaxInvoice.ims",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "70422"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dAKc3q5a+WPwtq/fzkAPno8PL8rmeXFOxEUD8ioy7p8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 17 Dec 2023 05:41:59 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o9f9kht03w"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dAKc3q5a+WPwtq/fzkAPno8PL8rmeXFOxEUD8ioy7p8="
+        },
+        {
+          "Name": "label",
+          "Value": "assets/VoucherFormats/TaxInvoice.ims"
+        }
+      ]
+    },
+    {
       "Route": "assets/VoucherFormats/TaxInvoiceNonNestle.ims",
       "AssetFile": "assets/VoucherFormats/TaxInvoiceNonNestle.ims",
       "Selectors": [],
