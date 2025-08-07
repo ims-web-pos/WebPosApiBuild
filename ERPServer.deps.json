@@ -3782,7 +3782,10 @@
           "iTextSharp": "5.5.13.3"
         },
         "runtime": {
-          "ERPServer.DataAccess.dll": {}
+          "ERPServer.DataAccess.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "ERPServer.Models/1.0.0": {
@@ -3795,7 +3798,10 @@
           "System.Data.DataSetExtensions": "4.5.0"
         },
         "runtime": {
-          "ERPServer.Models.dll": {}
+          "ERPServer.Models.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "ImsPosLibraryCore.BusinessModels/1.0.0": {
@@ -3808,7 +3814,10 @@
           "System.Data.DataSetExtensions": "4.5.0"
         },
         "runtime": {
-          "ImsPosLibraryCore.BusinessModels.dll": {}
+          "ImsPosLibraryCore.BusinessModels.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "ImsPosLibraryCore.Core/1.0.0": {
@@ -3822,7 +3831,10 @@
           "System.Data.DataSetExtensions": "4.5.0"
         },
         "runtime": {
-          "ImsPosLibraryCore.Core.dll": {}
+          "ImsPosLibraryCore.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "ImsPosLibraryCore.DataAccessLayer/1.0.0": {
@@ -3834,7 +3846,10 @@
           "System.Data.DataSetExtensions": "4.5.0"
         },
         "runtime": {
-          "ImsPosLibraryCore.DataAccessLayer.dll": {}
+          "ImsPosLibraryCore.DataAccessLayer.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "ImsPosLibraryCore.Helper/1.0.0": {
@@ -3847,7 +3862,10 @@
           "System.Data.SqlClient": "4.8.4"
         },
         "runtime": {
-          "ImsPosLibraryCore.Helper.dll": {}
+          "ImsPosLibraryCore.Helper.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "ImsPosLibraryCore.Models/1.0.0": {
@@ -3860,7 +3878,10 @@
           "System.Data.SqlClient": "4.8.4"
         },
         "runtime": {
-          "ImsPosLibraryCore.Models.dll": {}
+          "ImsPosLibraryCore.Models.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
@@ -3944,7 +3965,7 @@
     "CustomerLibrary/1.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-+fOvwDoKqXbIqegy4gFjOu/0IQTA7hK+OpSMVy3AMREB+wa4qjTs5aJDUszo+mqSYXsyCl3zz48pYnlAYi73LA==",
+      "sha512": "sha512-bY6E6pLy6UuaLU4TBIzuunv9L05O2xqaROt3QjCdo2yIXtjm09AsH9p0QZrqrRmpwKCVVfgxnwTJs5tmFzjJfg==",
       "path": "customerlibrary/1.0.0",
       "hashPath": "customerlibrary.1.0.0.nupkg.sha512"
     },
