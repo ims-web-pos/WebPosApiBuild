@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "ONBOARDING_DEMO/1.0.0": {
         "dependencies": {
+          "AWSSDK.S3": "4.0.7.11",
           "Dapper": "2.1.35",
           "IMSExtentionLibrary": "1.1.2",
           "MailKit": "4.9.0",
@@ -18,10 +19,29 @@
           "SSH.NET": "2025.0.0",
           "Swashbuckle.AspNetCore": "6.4.0",
           "System.IdentityModel.Tokens.Jwt": "8.3.0",
-          "AspNetCore.Identity.Dapper": "6.0.0.0"
+          "redmine-api": "4.50.0"
         },
         "runtime": {
           "ONBOARDING_DEMO.dll": {}
+        }
+      },
+      "AWSSDK.Core/4.0.1": {
+        "runtime": {
+          "lib/net8.0/AWSSDK.Core.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.1.0"
+          }
+        }
+      },
+      "AWSSDK.S3/4.0.7.11": {
+        "dependencies": {
+          "AWSSDK.Core": "4.0.1"
+        },
+        "runtime": {
+          "lib/net8.0/AWSSDK.S3.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.7.11"
+          }
         }
       },
       "Azure.Core/1.38.0": {
@@ -656,6 +676,17 @@
           }
         }
       },
+      "redmine-api/4.50.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "runtime": {
+          "lib/net8.0/redmine-net-api.dll": {
+            "assemblyVersion": "4.50.0.0",
+            "fileVersion": "4.50.0.0"
+          }
+        }
+      },
       "runtime.any.System.Reflection/4.3.0": {},
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {},
       "runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {},
@@ -1228,15 +1259,7 @@
         }
       },
       "System.Threading.Tasks.Extensions/4.5.4": {},
-      "System.ValueTuple/4.5.0": {},
-      "AspNetCore.Identity.Dapper/6.0.0.0": {
-        "runtime": {
-          "AspNetCore.Identity.Dapper.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.0.0"
-          }
-        }
-      }
+      "System.ValueTuple/4.5.0": {}
     }
   },
   "libraries": {
@@ -1244,6 +1267,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AWSSDK.Core/4.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-P1Pq1G/NeDFpkzTvA/qeSgxPxB0mbrcuXOCuDTAhKOp/i+05MP6by/OXQu38PmX687jeLDselTad8wY41xgDmQ==",
+      "path": "awssdk.core/4.0.1",
+      "hashPath": "awssdk.core.4.0.1.nupkg.sha512"
+    },
+    "AWSSDK.S3/4.0.7.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MC8C2wk51ja5EW8rV810SQ3o45jgWvBA/DUc4/HtvQ9lGdlK84PPZGqPUnGH2b7YXEqtFBi8NLUCb9xzGnUnSg==",
+      "path": "awssdk.s3/4.0.7.11",
+      "hashPath": "awssdk.s3.4.0.7.11.nupkg.sha512"
     },
     "Azure.Core/1.38.0": {
       "type": "package",
@@ -1290,7 +1327,7 @@
     "IMSExtentionLibrary/1.1.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-9vYc2JvXDq6OkBT07HjEpJIFlUGaJRsChHac3X3mfjIeGmI//namdfwgigRoZ10oywBO1VtsejE7kvY5894amQ==",
+      "sha512": "sha512-xFlZ8aJ5hUStw1wNl9dtahi8O3hO9z6gQUI86wiU0whHi84+XcJNJ20SIDM9VRN3yYm1Qcju1P5UBOrOYnhDpA==",
       "path": "imsextentionlibrary/1.1.2",
       "hashPath": "imsextentionlibrary.1.1.2.nupkg.sha512"
     },
@@ -1629,6 +1666,13 @@
       "sha512": "sha512-HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
       "path": "newtonsoft.json/13.0.3",
       "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
+    },
+    "redmine-api/4.50.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sjvHh5qw7Bv5dGzWaKsxBMSHGmfESGOgLaJJModiObLIYaK0IbTZxB0wgA3jtod3u6S6UK+amrNie5QIsDnezw==",
+      "path": "redmine-api/4.50.0",
+      "hashPath": "redmine-api.4.50.0.nupkg.sha512"
     },
     "runtime.any.System.Reflection/4.3.0": {
       "type": "package",
@@ -2126,11 +2170,6 @@
       "sha512": "sha512-okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
       "path": "system.valuetuple/4.5.0",
       "hashPath": "system.valuetuple.4.5.0.nupkg.sha512"
-    },
-    "AspNetCore.Identity.Dapper/6.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
     }
   }
 }
