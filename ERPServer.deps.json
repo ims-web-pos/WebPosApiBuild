@@ -31,6 +31,7 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.10",
           "Ocelot": "18.0.0",
           "PDFCreator": "1.1.2",
+          "Polly": "8.6.4",
           "StackExchange.Redis": "2.8.22",
           "Swashbuckle.AspNetCore": "6.4.0",
           "System.Data.DataSetExtensions": "4.5.0",
@@ -984,6 +985,17 @@
       "Microsoft.Bcl.AsyncInterfaces/8.0.0": {
         "runtime": {
           "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
+      "Microsoft.Bcl.TimeProvider/8.0.0": {
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "8.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Bcl.TimeProvider.dll": {
             "assemblyVersion": "8.0.0.0",
             "fileVersion": "8.0.23.53103"
           }
@@ -2486,6 +2498,28 @@
           }
         }
       },
+      "Polly/8.6.4": {
+        "dependencies": {
+          "Polly.Core": "8.6.4"
+        },
+        "runtime": {
+          "lib/net6.0/Polly.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.6.4.5033"
+          }
+        }
+      },
+      "Polly.Core/8.6.4": {
+        "dependencies": {
+          "Microsoft.Bcl.TimeProvider": "8.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Polly.Core.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.6.4.5033"
+          }
+        }
+      },
       "Portable.BouncyCastle/1.9.0": {
         "runtime": {
           "lib/netstandard2.0/BouncyCastle.Crypto.dll": {
@@ -3831,10 +3865,7 @@
           "iTextSharp": "5.5.13.3"
         },
         "runtime": {
-          "ERPServer.DataAccess.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "ERPServer.DataAccess.dll": {}
         }
       },
       "ERPServer.Models/1.0.0": {
@@ -3847,10 +3878,7 @@
           "System.Data.DataSetExtensions": "4.5.0"
         },
         "runtime": {
-          "ERPServer.Models.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "ERPServer.Models.dll": {}
         }
       },
       "ImsPosLibraryCore.BusinessModels/1.0.0": {
@@ -3863,10 +3891,7 @@
           "System.Data.DataSetExtensions": "4.5.0"
         },
         "runtime": {
-          "ImsPosLibraryCore.BusinessModels.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "ImsPosLibraryCore.BusinessModels.dll": {}
         }
       },
       "ImsPosLibraryCore.Core/1.0.0": {
@@ -3880,10 +3905,7 @@
           "System.Data.DataSetExtensions": "4.5.0"
         },
         "runtime": {
-          "ImsPosLibraryCore.Core.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "ImsPosLibraryCore.Core.dll": {}
         }
       },
       "ImsPosLibraryCore.DataAccessLayer/1.0.0": {
@@ -3895,10 +3917,7 @@
           "System.Data.DataSetExtensions": "4.5.0"
         },
         "runtime": {
-          "ImsPosLibraryCore.DataAccessLayer.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "ImsPosLibraryCore.DataAccessLayer.dll": {}
         }
       },
       "ImsPosLibraryCore.Helper/1.0.0": {
@@ -3911,10 +3930,7 @@
           "System.Data.SqlClient": "4.8.4"
         },
         "runtime": {
-          "ImsPosLibraryCore.Helper.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "ImsPosLibraryCore.Helper.dll": {}
         }
       },
       "ImsPosLibraryCore.Models/1.0.0": {
@@ -3927,10 +3943,7 @@
           "System.Data.SqlClient": "4.8.4"
         },
         "runtime": {
-          "ImsPosLibraryCore.Models.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "ImsPosLibraryCore.Models.dll": {}
         }
       }
     }
@@ -4014,7 +4027,7 @@
     "CustomerLibrary/1.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-bY6E6pLy6UuaLU4TBIzuunv9L05O2xqaROt3QjCdo2yIXtjm09AsH9p0QZrqrRmpwKCVVfgxnwTJs5tmFzjJfg==",
+      "sha512": "sha512-eGbJaM+tlEkltl476vBcsbxFjeiCt9y3kNrnvHy12iGDSGSp5D18VQdLHPx51jbGXt2prJ2Lg+64IcyxAGVGkg==",
       "path": "customerlibrary/1.0.0",
       "hashPath": "customerlibrary.1.0.0.nupkg.sha512"
     },
@@ -4591,6 +4604,13 @@
       "sha512": "sha512-3WA9q9yVqJp222P3x1wYIGDAkpjAku0TMUaaQV22g6L67AI0LdOIrVS7Ht2vJfLHGSPVuqN94vIr15qn+HEkHw==",
       "path": "microsoft.bcl.asyncinterfaces/8.0.0",
       "hashPath": "microsoft.bcl.asyncinterfaces.8.0.0.nupkg.sha512"
+    },
+    "Microsoft.Bcl.TimeProvider/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-f5Kr5JepAbiGo7uDmhgvMqhntwxqXNn6/IpTBSSI4cuHhgnJGrLxFRhMjVpRkLPp6zJXO0/G0l3j9p9zSJxa+w==",
+      "path": "microsoft.bcl.timeprovider/8.0.0",
+      "hashPath": "microsoft.bcl.timeprovider.8.0.0.nupkg.sha512"
     },
     "Microsoft.Build/17.0.0": {
       "type": "package",
@@ -5200,6 +5220,20 @@
       "sha512": "sha512-zG2FApP5zxSx6OcdJQLbZDk2AVlN2BNQD6MorwIfV6gVj0RRxWPEp2LXAxqDGZqeNV1Zp0BNPcNaey/GXmTdvQ==",
       "path": "pipelines.sockets.unofficial/2.2.8",
       "hashPath": "pipelines.sockets.unofficial.2.2.8.nupkg.sha512"
+    },
+    "Polly/8.6.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uuBsDoBw0oYrMe3uTWRjkT2sIkKh+ZZnnDrLb4Z+QANfeA4+7FJacx6E8CY5GAxXRoSgFrvUADEAQ7DPF6fGiw==",
+      "path": "polly/8.6.4",
+      "hashPath": "polly.8.6.4.nupkg.sha512"
+    },
+    "Polly.Core/8.6.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4AWqYnQ2TME0E+Mzovt1Uu+VyvpR84ymUldMcPw7Mbj799Phaag14CKrMtlJGx5jsvYP+S3oR1QmysgmXoD5cw==",
+      "path": "polly.core/8.6.4",
+      "hashPath": "polly.core.8.6.4.nupkg.sha512"
     },
     "Portable.BouncyCastle/1.9.0": {
       "type": "package",
