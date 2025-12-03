@@ -8,6 +8,8 @@
     ".NETCoreApp,Version=v6.0": {
       "ERPServer/1.0.0": {
         "dependencies": {
+          "AWSSDK.Extensions.NETCore.Setup": "4.0.3.11",
+          "AWSSDK.S3": "4.0.11.1",
           "Asp.Versioning.Http": "6.5.0",
           "Asp.Versioning.Mvc": "6.4.1",
           "Asp.Versioning.Mvc.ApiExplorer": "6.4.0",
@@ -83,6 +85,39 @@
           "lib/net6.0/Asp.Versioning.Mvc.ApiExplorer.dll": {
             "assemblyVersion": "6.4.0.0",
             "fileVersion": "6.4.8397.948"
+          }
+        }
+      },
+      "AWSSDK.Core/4.0.3": {
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.3.0"
+          }
+        }
+      },
+      "AWSSDK.Extensions.NETCore.Setup/4.0.3.11": {
+        "dependencies": {
+          "AWSSDK.Core": "4.0.3",
+          "Microsoft.Extensions.Configuration.Abstractions": "5.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.Extensions.NETCore.Setup.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.3.11"
+          }
+        }
+      },
+      "AWSSDK.S3/4.0.11.1": {
+        "dependencies": {
+          "AWSSDK.Core": "4.0.3"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.S3.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.11.1"
           }
         }
       },
@@ -3947,6 +3982,27 @@
       "sha512": "sha512-HFEJNtvnEsjhZ5LyLtD5jhVc7n40oHLfIJNl6L6YJgmDstTAt+2SEL17RpnzvwtR7JbS7X0D0Vds+86pt2u3SA==",
       "path": "asp.versioning.mvc.apiexplorer/6.4.0",
       "hashPath": "asp.versioning.mvc.apiexplorer.6.4.0.nupkg.sha512"
+    },
+    "AWSSDK.Core/4.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-haZXE5wMsr1MISFmeMC6wbHjFjQ5f+g84W8EIcqvV/Su5ET6N8BOJxtFPvm3EnHElRuaaTgMwTEn2G9JZ4wBpw==",
+      "path": "awssdk.core/4.0.3",
+      "hashPath": "awssdk.core.4.0.3.nupkg.sha512"
+    },
+    "AWSSDK.Extensions.NETCore.Setup/4.0.3.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HBQAY46NLh4fv2KdheWCIygV8pjfbHmlMldn5kjSmc2xHw7NyG2bWPX+mN2iKCs0orAjxcwBJLwPKNKtVHD8vA==",
+      "path": "awssdk.extensions.netcore.setup/4.0.3.11",
+      "hashPath": "awssdk.extensions.netcore.setup.4.0.3.11.nupkg.sha512"
+    },
+    "AWSSDK.S3/4.0.11.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VJF0IYSJBc6u4ODm3ijByLnyyZdHVNtxt9tvtEeLPelp4XtRbZt9+Gqd/tbMtV2WWOBQ2CKIgWjmI3RXjQCUCw==",
+      "path": "awssdk.s3/4.0.11.1",
+      "hashPath": "awssdk.s3.4.0.11.1.nupkg.sha512"
     },
     "BouncyCastle/1.8.9": {
       "type": "package",
