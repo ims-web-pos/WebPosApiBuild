@@ -2624,7 +2624,10 @@
           "itext7": "7.1.10"
         },
         "runtime": {
-          "ImsPosLibraryCore.dll": {}
+          "ImsPosLibraryCore.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         },
         "compile": {
           "ImsPosLibraryCore.dll": {}
