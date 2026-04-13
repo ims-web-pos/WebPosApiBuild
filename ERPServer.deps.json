@@ -24,7 +24,7 @@
           "HotChocolate.AspNetCore": "14.3.0",
           "IMS.JwtAuth.Library": "1.0.0",
           "IMSCustomFieldExtentions": "1.0.3",
-          "IMSExtentionLibrary": "1.1.7",
+          "IMSExtentionLibrary": "1.1.8",
           "MailKit": "3.4.1",
           "MediatR": "12.0.1",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.10",
@@ -185,7 +185,7 @@
       },
       "ComFunctionsLib/1.0.2": {
         "dependencies": {
-          "IMSExtentionLibrary": "1.1.7",
+          "IMSExtentionLibrary": "1.1.8",
           "Microsoft.CSharp": "4.7.0",
           "Microsoft.Extensions.Configuration": "10.0.0",
           "Microsoft.Extensions.Configuration.Xml": "9.0.0",
@@ -762,7 +762,7 @@
           }
         }
       },
-      "IMSExtentionLibrary/1.1.7": {
+      "IMSExtentionLibrary/1.1.8": {
         "dependencies": {
           "BouncyCastle.Cryptography": "2.3.1",
           "Newtonsoft.Json": "13.0.3",
@@ -775,8 +775,8 @@
         },
         "runtime": {
           "lib/netstandard2.0/IMSExtentionLibrary.dll": {
-            "assemblyVersion": "1.1.7.0",
-            "fileVersion": "1.1.7.0"
+            "assemblyVersion": "1.1.8.0",
+            "fileVersion": "1.1.8.0"
           }
         }
       },
@@ -5161,7 +5161,7 @@
     "CustomerLibrary/1.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-eGbJaM+tlEkltl476vBcsbxFjeiCt9y3kNrnvHy12iGDSGSp5D18VQdLHPx51jbGXt2prJ2Lg+64IcyxAGVGkg==",
+      "sha512": "sha512-+fOvwDoKqXbIqegy4gFjOu/0IQTA7hK+OpSMVy3AMREB+wa4qjTs5aJDUszo+mqSYXsyCl3zz48pYnlAYi73LA==",
       "path": "customerlibrary/1.0.0",
       "hashPath": "customerlibrary.1.0.0.nupkg.sha512"
     },
@@ -5466,12 +5466,12 @@
       "path": "imscustomfieldextentions/1.0.3",
       "hashPath": "imscustomfieldextentions.1.0.3.nupkg.sha512"
     },
-    "IMSExtentionLibrary/1.1.7": {
+    "IMSExtentionLibrary/1.1.8": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Yftbvt6KKpAiSroBRmWNUpCg/huPMzthBkWvBLEQ/xCGDrua8sJIt6sgWfLWyp273pj+H71NXpHUNzUt4UW9tA==",
-      "path": "imsextentionlibrary/1.1.7",
-      "hashPath": "imsextentionlibrary.1.1.7.nupkg.sha512"
+      "sha512": "sha512-1guUkssX7spk5rf6egdlukW5Jw0FgURNsEiM2chjJkMfxd1V/V36EVR8IuXUyy2fEMylgL3BQPASpSukEIYZig==",
+      "path": "imsextentionlibrary/1.1.8",
+      "hashPath": "imsextentionlibrary.1.1.8.nupkg.sha512"
     },
     "itext7/7.1.10": {
       "type": "package",
