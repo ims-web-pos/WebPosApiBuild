@@ -759,6 +759,10 @@
           "lib/netstandard2.1/IMSCustomFieldExtentions.dll": {
             "assemblyVersion": "1.0.3.0",
             "fileVersion": "1.0.3.0"
+          },
+          "lib/netstandard2.1/IMSCustomFieldExtentions2.dll": {
+            "assemblyVersion": "1.0.3.0",
+            "fileVersion": "1.0.3.0"
           }
         }
       },
