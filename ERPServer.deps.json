@@ -16,14 +16,14 @@
           "Carter": "6.1.1",
           "ClosedXML": "0.95.2",
           "ComFunctionsLib": "1.0.2",
-          "CustomerLibrary": "1.0.0",
+          "CustomerLibrary": "1.0.1",
           "Dapper": "2.0.123",
           "EPPlus": "6.0.8",
           "ERPServer.DataAccess": "1.0.0",
           "ERPServer.Models": "1.0.0",
           "HotChocolate.AspNetCore": "14.3.0",
           "IMS.JwtAuth.Library": "1.0.0",
-          "IMSCustomFieldExtentions": "1.0.3",
+          "IMSCustomFieldExtentions": "1.0.4",
           "IMSExtentionLibrary": "1.1.8",
           "MailKit": "3.4.1",
           "MediatR": "12.0.1",
@@ -238,7 +238,7 @@
           }
         }
       },
-      "CustomerLibrary/1.0.0": {
+      "CustomerLibrary/1.0.1": {
         "dependencies": {
           "Asp.Versioning.Http": "6.5.0",
           "Asp.Versioning.Mvc": "6.4.1",
@@ -255,8 +255,8 @@
         },
         "runtime": {
           "lib/net6.0/CustomerLibrary.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.0.0"
           }
         }
       },
@@ -751,7 +751,7 @@
           }
         }
       },
-      "IMSCustomFieldExtentions/1.0.3": {
+      "IMSCustomFieldExtentions/1.0.4": {
         "dependencies": {
           "System.Text.Json": "7.0.0"
         },
@@ -4897,7 +4897,7 @@
           "ExcelDataReader": "3.6.0",
           "ExcelDataReader.DataSet": "3.6.0",
           "HotChocolate.AspNetCore": "14.3.0",
-          "IMSCustomFieldExtentions": "1.0.3",
+          "IMSCustomFieldExtentions": "1.0.4",
           "MailKit": "3.4.1",
           "Mapster": "7.3.0",
           "Microsoft.AspNetCore.SignalR": "1.1.0",
@@ -5025,7 +5025,7 @@
         "dependencies": {
           "Dapper.Contrib": "2.0.78",
           "HotChocolate.AspNetCore": "14.3.0",
-          "IMSCustomFieldExtentions": "1.0.3",
+          "IMSCustomFieldExtentions": "1.0.4",
           "MailKit": "3.4.1",
           "Newtonsoft.Json": "13.0.3",
           "System.Data.DataSetExtensions": "4.5.0",
@@ -5158,12 +5158,12 @@
       "path": "csvhelper/29.0.0",
       "hashPath": "csvhelper.29.0.0.nupkg.sha512"
     },
-    "CustomerLibrary/1.0.0": {
+    "CustomerLibrary/1.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-+fOvwDoKqXbIqegy4gFjOu/0IQTA7hK+OpSMVy3AMREB+wa4qjTs5aJDUszo+mqSYXsyCl3zz48pYnlAYi73LA==",
-      "path": "customerlibrary/1.0.0",
-      "hashPath": "customerlibrary.1.0.0.nupkg.sha512"
+      "sha512": "sha512-u98EFLzwYl7GjUctpPVNrx9V+LCA4jFuUX3WWWUMFZ0tqeI1SnerLcH4GB7MpZ3zRu6osilzRrVsXg9dsJNOAg==",
+      "path": "customerlibrary/1.0.1",
+      "hashPath": "customerlibrary.1.0.1.nupkg.sha512"
     },
     "Dapper/2.0.123": {
       "type": "package",
@@ -5459,12 +5459,12 @@
       "path": "humanizer.core/2.2.0",
       "hashPath": "humanizer.core.2.2.0.nupkg.sha512"
     },
-    "IMSCustomFieldExtentions/1.0.3": {
+    "IMSCustomFieldExtentions/1.0.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-fUmSKgxVrbZfDGCOMDUmF6KJafXTDRVUxGPX0TB1+gLtBWoasdDzmpAjlV96z/kGDI6HrV/UCXw164DFN7sBoQ==",
-      "path": "imscustomfieldextentions/1.0.3",
-      "hashPath": "imscustomfieldextentions.1.0.3.nupkg.sha512"
+      "sha512": "sha512-2EdHf7xcV9nUYzXz/OrZ+WUb9MrpIN653YOccX+b63GCN3tlK2g3N8JIF4/xMPk9s+9uCtJ5CQDuI49YCKYbNg==",
+      "path": "imscustomfieldextentions/1.0.4",
+      "hashPath": "imscustomfieldextentions.1.0.4.nupkg.sha512"
     },
     "IMSExtentionLibrary/1.1.8": {
       "type": "package",
