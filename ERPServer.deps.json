@@ -791,6 +791,29 @@
           }
         }
       },
+      "IMS.JwtAuth.Library/1.0.0": {
+        "dependencies": {
+          "Dapper": "2.0.123",
+          "MailKit": "3.4.1",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.10",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Microsoft.Extensions.Caching.Memory": "6.0.1",
+          "Microsoft.Extensions.Configuration.Abstractions": "10.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.0",
+          "Microsoft.Extensions.Options": "10.0.0",
+          "Newtonsoft.Json": "13.0.3",
+          "StackExchange.Redis": "2.8.22",
+          "System.Data.SqlClient": "4.8.4",
+          "System.IdentityModel.Tokens.Jwt": "6.25.0"
+        },
+        "runtime": {
+          "lib/net6.0/IMS.JwtAuth.Library.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "IMSCustomFieldExtentions/1.0.4": {
         "dependencies": {
           "System.Text.Json": "7.0.0"
@@ -4973,29 +4996,6 @@
           }
         }
       },
-      "IMS.JwtAuth.Library/1.0.0": {
-        "dependencies": {
-          "Dapper": "2.0.123",
-          "MailKit": "3.4.1",
-          "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.10",
-          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
-          "Microsoft.Extensions.Caching.Memory": "6.0.1",
-          "Microsoft.Extensions.Configuration.Abstractions": "10.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "10.0.0",
-          "Microsoft.Extensions.Options": "10.0.0",
-          "Newtonsoft.Json": "13.0.3",
-          "StackExchange.Redis": "2.8.22",
-          "System.Data.SqlClient": "4.8.4",
-          "System.IdentityModel.Tokens.Jwt": "6.25.0"
-        },
-        "runtime": {
-          "IMS.JwtAuth.Library.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
       "ImsPosLibraryCore.BusinessModels/1.0.0": {
         "dependencies": {
           "Dapper.Contrib": "2.0.78",
@@ -5518,6 +5518,13 @@
       "sha512": "sha512-rsYXB7+iUPP8AHgQ8JP2UZI2xK2KhjcdGr9E6zX3CsZaTLCaw8M35vaAJRo1rfxeaZEVMuXeaquLVCkZ7JcZ5Q==",
       "path": "humanizer.core/2.2.0",
       "hashPath": "humanizer.core.2.2.0.nupkg.sha512"
+    },
+    "IMS.JwtAuth.Library/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4to9q6Tl059kuQSnJNmyLtCM/xOzQM4svA6EQeg0a6Hcxk946UVoStF58GjcMyQ0MY0dOVGkYAv5SVR03PbJ3w==",
+      "path": "ims.jwtauth.library/1.0.0",
+      "hashPath": "ims.jwtauth.library.1.0.0.nupkg.sha512"
     },
     "IMSCustomFieldExtentions/1.0.4": {
       "type": "package",
@@ -7863,11 +7870,6 @@
       "sha512": ""
     },
     "ERPServer.Models/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "IMS.JwtAuth.Library/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
