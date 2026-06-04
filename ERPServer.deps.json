@@ -25,7 +25,7 @@
           "HotChocolate.AspNetCore": "14.3.0",
           "IMS.JwtAuth.Library": "1.0.0",
           "IMSCustomFieldExtentions": "1.0.4",
-          "IMSExtentionLibrary": "1.1.8",
+          "IMSExtentionLibrary": "1.1.7",
           "MailKit": "3.4.1",
           "MediatR": "12.0.1",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.10",
@@ -186,7 +186,7 @@
       },
       "ComFunctionsLib/1.0.2": {
         "dependencies": {
-          "IMSExtentionLibrary": "1.1.8",
+          "IMSExtentionLibrary": "1.1.7",
           "Microsoft.CSharp": "4.7.0",
           "Microsoft.Extensions.Configuration": "10.0.0",
           "Microsoft.Extensions.Configuration.Xml": "9.0.0",
@@ -777,7 +777,7 @@
           }
         }
       },
-      "IMSExtentionLibrary/1.1.8": {
+      "IMSExtentionLibrary/1.1.7": {
         "dependencies": {
           "BouncyCastle.Cryptography": "2.3.1",
           "Newtonsoft.Json": "13.0.3",
@@ -790,8 +790,8 @@
         },
         "runtime": {
           "lib/netstandard2.0/IMSExtentionLibrary.dll": {
-            "assemblyVersion": "1.1.8.0",
-            "fileVersion": "1.1.8.0"
+            "assemblyVersion": "1.1.7.0",
+            "fileVersion": "1.1.7.0"
           }
         }
       },
@@ -5488,12 +5488,12 @@
       "path": "imscustomfieldextentions/1.0.4",
       "hashPath": "imscustomfieldextentions.1.0.4.nupkg.sha512"
     },
-    "IMSExtentionLibrary/1.1.8": {
+    "IMSExtentionLibrary/1.1.7": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-1guUkssX7spk5rf6egdlukW5Jw0FgURNsEiM2chjJkMfxd1V/V36EVR8IuXUyy2fEMylgL3BQPASpSukEIYZig==",
-      "path": "imsextentionlibrary/1.1.8",
-      "hashPath": "imsextentionlibrary.1.1.8.nupkg.sha512"
+      "sha512": "sha512-Yftbvt6KKpAiSroBRmWNUpCg/huPMzthBkWvBLEQ/xCGDrua8sJIt6sgWfLWyp273pj+H71NXpHUNzUt4UW9tA==",
+      "path": "imsextentionlibrary/1.1.7",
+      "hashPath": "imsextentionlibrary.1.1.7.nupkg.sha512"
     },
     "itext7/7.1.10": {
       "type": "package",
