@@ -25,7 +25,7 @@
           "ERPServer.ExcelExport": "1.0.3",
           "ERPServer.Models": "1.0.0",
           "HotChocolate.AspNetCore": "14.3.0",
-          "IMS.JwtAuth.Library": "1.0.0",
+          "IMS.JwtAuth.Library": "1.0.1",
           "IMSCustomFieldExtentions": "1.0.4",
           "IMSExtentionLibrary": "1.1.8",
           "MailKit": "3.4.1",
@@ -4973,7 +4973,7 @@
           }
         }
       },
-      "IMS.JwtAuth.Library/1.0.0": {
+      "IMS.JwtAuth.Library/1.0.1": {
         "dependencies": {
           "Dapper": "2.0.123",
           "MailKit": "3.4.1",
@@ -4991,8 +4991,8 @@
         },
         "runtime": {
           "IMS.JwtAuth.Library.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
+            "assemblyVersion": "1.0.1.0",
+            "fileVersion": "1.0.1.0"
           }
         }
       },
@@ -7867,7 +7867,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "IMS.JwtAuth.Library/1.0.0": {
+    "IMS.JwtAuth.Library/1.0.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
