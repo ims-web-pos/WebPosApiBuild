@@ -281,8 +281,8 @@
         },
         "runtime": {
           "lib/net6.0/CustomerLibrary.dll": {
-            "assemblyVersion": "1.1.0.0",
-            "fileVersion": "1.1.0.0"
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
