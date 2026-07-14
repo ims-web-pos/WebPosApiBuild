@@ -4265,7 +4265,7 @@
     "ComFunctionsLib/1.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-EhROifw0so7dbtjieEybIo9x3IqeV2cS+K5zpCZAA/GEYQRYYF7o9KzCNXl+2m0iwoFeSkGL41KMqDqd5Xeq0g==",
+      "sha512": "sha512-I3WeQvakIe0u/R3QePW8V8u94LbDxMMxxo7NRZY3m+yLdPFjQwQlfd6qw3T7UM0ei3BaiB36BoiGGfdGnhgOdQ==",
       "path": "comfunctionslib/1.0.1",
       "hashPath": "comfunctionslib.1.0.1.nupkg.sha512"
     },
