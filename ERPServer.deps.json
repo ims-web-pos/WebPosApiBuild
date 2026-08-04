@@ -13,17 +13,19 @@
           "Asp.Versioning.Http": "6.5.0",
           "Asp.Versioning.Mvc": "6.4.1",
           "Asp.Versioning.Mvc.ApiExplorer": "6.4.0",
+          "AutoMapper": "12.0.0",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.0",
           "Carter": "6.1.1",
           "ClosedXML": "0.95.2",
           "ComFunctionsLib": "1.0.2",
-          "CustomerLibrary": "1.0.4",
+          "CustomerLibrary": "1.0.5",
           "Dapper": "2.0.123",
           "EPPlus": "6.0.8",
           "ERPServer.DataAccess": "1.0.0",
           "ERPServer.ExcelExport": "1.0.3",
           "ERPServer.Models": "1.0.0",
           "HotChocolate.AspNetCore": "14.3.0",
-          "IMS.JwtAuth.Library": "1.0.0",
+          "IMS.JwtAuth.Library": "1.0.3",
           "IMSCustomFieldExtentions": "1.0.4",
           "IMSExtentionLibrary": "1.1.8",
           "MailKit": "3.4.1",
@@ -102,6 +104,29 @@
           "lib/net6.0/Asp.Versioning.Mvc.ApiExplorer.dll": {
             "assemblyVersion": "6.4.0.0",
             "fileVersion": "6.4.8397.948"
+          }
+        }
+      },
+      "AutoMapper/12.0.0": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/AutoMapper.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.0.0"
+          }
+        }
+      },
+      "AutoMapper.Extensions.Microsoft.DependencyInjection/12.0.0": {
+        "dependencies": {
+          "AutoMapper": "12.0.0",
+          "Microsoft.Extensions.Options": "10.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.0.0"
           }
         }
       },
@@ -240,7 +265,7 @@
           }
         }
       },
-      "CustomerLibrary/1.0.4": {
+      "CustomerLibrary/1.0.5": {
         "dependencies": {
           "Asp.Versioning.Http": "6.5.0",
           "Asp.Versioning.Mvc": "6.4.1",
@@ -764,6 +789,29 @@
           "lib/netstandard1.0/Humanizer.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.0"
+          }
+        }
+      },
+      "IMS.JwtAuth.Library/1.0.3": {
+        "dependencies": {
+          "Dapper": "2.0.123",
+          "MailKit": "3.4.1",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.10",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Microsoft.Extensions.Caching.Memory": "6.0.1",
+          "Microsoft.Extensions.Configuration.Abstractions": "10.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.0",
+          "Microsoft.Extensions.Options": "10.0.0",
+          "Newtonsoft.Json": "13.0.3",
+          "StackExchange.Redis": "2.8.22",
+          "System.Data.SqlClient": "4.8.4",
+          "System.IdentityModel.Tokens.Jwt": "6.25.0"
+        },
+        "runtime": {
+          "lib/net6.0/IMS.JwtAuth.Library.dll": {
+            "assemblyVersion": "1.0.3.0",
+            "fileVersion": "1.0.3.0"
           }
         }
       },
@@ -4957,30 +5005,6 @@
           }
         }
       },
-      "IMS.JwtAuth.Library/1.0.0": {
-        "dependencies": {
-          "Dapper": "2.0.123",
-          "ImsPosLibraryCore.Core": "1.0.0",
-          "MailKit": "3.4.1",
-          "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.10",
-          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
-          "Microsoft.Extensions.Caching.Memory": "6.0.1",
-          "Microsoft.Extensions.Configuration.Abstractions": "10.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "10.0.0",
-          "Microsoft.Extensions.Options": "10.0.0",
-          "Newtonsoft.Json": "13.0.3",
-          "StackExchange.Redis": "2.8.22",
-          "System.Data.SqlClient": "4.8.4",
-          "System.IdentityModel.Tokens.Jwt": "6.25.0"
-        },
-        "runtime": {
-          "IMS.JwtAuth.Library.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
       "ImsPosLibraryCore.BusinessModels/1.0.0": {
         "dependencies": {
           "Dapper.Contrib": "2.0.78",
@@ -5098,6 +5122,20 @@
       "path": "asp.versioning.mvc.apiexplorer/6.4.0",
       "hashPath": "asp.versioning.mvc.apiexplorer.6.4.0.nupkg.sha512"
     },
+    "AutoMapper/12.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0Rmg0zI5AFu1O/y//o9VGyhxKjhggWpk9mOA1tp0DEVx40c61bs+lnQv+0jUq8XbniF7FKgIVvI1perqiMtLrA==",
+      "path": "automapper/12.0.0",
+      "hashPath": "automapper.12.0.0.nupkg.sha512"
+    },
+    "AutoMapper.Extensions.Microsoft.DependencyInjection/12.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XCJ4E3oKrbRl1qY9Mr+7uyC0xZj1+bqQjmQRWTiTKiVuuXTny+7YFWHi20tPjwkMukLbicN6yGlDy5PZ4wyi1w==",
+      "path": "automapper.extensions.microsoft.dependencyinjection/12.0.0",
+      "hashPath": "automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512"
+    },
     "AWSSDK.Core/4.0.3": {
       "type": "package",
       "serviceable": true,
@@ -5182,12 +5220,12 @@
       "path": "csvhelper/29.0.0",
       "hashPath": "csvhelper.29.0.0.nupkg.sha512"
     },
-    "CustomerLibrary/1.0.4": {
+    "CustomerLibrary/1.0.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-vQk4TfdDMMQUzQ8A7rovTyOWKEg4hDpLQsYODWnaoEMNR4bylc0Zq3jvaZuMDoc34oWM0ctFJ9ubnRIOqBKWoQ==",
-      "path": "customerlibrary/1.0.4",
-      "hashPath": "customerlibrary.1.0.4.nupkg.sha512"
+      "sha512": "sha512-fh4kZxKP5pgFZbD411yrOmpJYpuYJQ+8NOxn1LC3Y0nEhSvaMRKDa3ZFFvygFTFSII6UP3SG4Yx0QGwxdQyb2A==",
+      "path": "customerlibrary/1.0.5",
+      "hashPath": "customerlibrary.1.0.5.nupkg.sha512"
     },
     "Dapper/2.0.123": {
       "type": "package",
@@ -5489,6 +5527,13 @@
       "sha512": "sha512-rsYXB7+iUPP8AHgQ8JP2UZI2xK2KhjcdGr9E6zX3CsZaTLCaw8M35vaAJRo1rfxeaZEVMuXeaquLVCkZ7JcZ5Q==",
       "path": "humanizer.core/2.2.0",
       "hashPath": "humanizer.core.2.2.0.nupkg.sha512"
+    },
+    "IMS.JwtAuth.Library/1.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CIkbl7bx90jb2hiwZ1NM/iCoShVGtGKWDqXJa8qHMEDvBudxNsJEqhjrP8LNrfmyaF9UWV5nIvKgUj/OuDD4Bw==",
+      "path": "ims.jwtauth.library/1.0.3",
+      "hashPath": "ims.jwtauth.library.1.0.3.nupkg.sha512"
     },
     "IMSCustomFieldExtentions/1.0.4": {
       "type": "package",
@@ -7841,11 +7886,6 @@
       "sha512": ""
     },
     "ERPServer.Models/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "IMS.JwtAuth.Library/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
