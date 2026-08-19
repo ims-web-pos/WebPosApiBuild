@@ -1,0 +1,76 @@
+name: Auto Tag beta
+
+# Tags every push as: <branch>-v<version>
+#   - Normal push:            bumps MINOR, resets PATCH to 0
+#       e.g. v0.1.0 -> v0.2.0 -> v0.3.0
+#   - Commit contains #betamerge: bumps MAJOR, resets MINOR/PATCH to 0
+#       e.g. v0.3.0 -> v1.0.0, then counting continues v1.1.0, v1.2.0 ...
+#   - First push on a branch starts at v0.1.0 (or v1.0.0 if it's a betamerge)
+
+on:
+  push:
+    branches:
+      - '**'
+
+permissions:
+  contents: write
+
+jobs:
+  tag:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # need full history + tags for version lookup
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+      - name: Determine branch name
+        id: branch
+        run: |
+          BRANCH_NAME="${GITHUB_REF#refs/heads/}"
+          # sanitize so it's safe to use in a tag name
+          SAFE_BRANCH=$(echo "$BRANCH_NAME" | sed 's/[^a-zA-Z0-9._-]/-/g')
+          echo "branch=$SAFE_BRANCH" >> "$GITHUB_OUTPUT"
+      - name: Calculate next version and create tag
+        id: version
+        run: |
+          set -e
+          BRANCH="${{ steps.branch.outputs.branch }}"
+          # latest existing version for this branch, e.g. "0.3.0" (v-prefix stripped for arithmetic)
+          LATEST_TAG=$(git tag -l "${BRANCH}-v*" \
+            | sed "s/^${BRANCH}-v//" \
+            | sort -t. -k1,1n -k2,2n -k3,3n \
+            | tail -n1)
+          COMMIT_MSG=$(git log -1 --pretty=%B)
+          if [ -z "$LATEST_TAG" ]; then
+            # no tags yet for this branch
+            if echo "$COMMIT_MSG" | grep -q "#betamerge"; then
+              NEW_VERSION="1.0.0"
+            else
+              NEW_VERSION="0.1.0"
+            fi
+          else
+            MAJOR=$(echo "$LATEST_TAG" | cut -d. -f1)
+            MINOR=$(echo "$LATEST_TAG" | cut -d. -f2)
+            PATCH=$(echo "$LATEST_TAG" | cut -d. -f3)
+            if echo "$COMMIT_MSG" | grep -q "#betamerge"; then
+              MAJOR=$((MAJOR + 1))
+              MINOR=0
+              PATCH=0
+            else
+              MINOR=$((MINOR + 1))
+              PATCH=0
+            fi
+            NEW_VERSION="${MAJOR}.${MINOR}.${PATCH}"
+          fi
+          NEW_TAG="${BRANCH}-v${NEW_VERSION}"
+          echo "Latest: ${LATEST_TAG:-none} -> New: ${NEW_VERSION}"
+          echo "tag=$NEW_TAG" >> "$GITHUB_OUTPUT"
+      - name: Create and push tag
+        run: |
+          git tag "${{ steps.version.outputs.tag }}"
+          git push origin "${{ steps.version.outputs.tag }}"
