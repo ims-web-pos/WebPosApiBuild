@@ -16,7 +16,7 @@
           "Carter": "6.1.1",
           "ClosedXML": "0.95.2",
           "ComFunctionsLib": "1.0.2",
-          "CustomerLibrary": "1.0.5",
+          "CustomerLibrary": "1.0.6",
           "Dapper": "2.0.123",
           "EPPlus": "6.0.8",
           "ERPServer.DataAccess": "1.0.0",
@@ -240,7 +240,7 @@
           }
         }
       },
-      "CustomerLibrary/1.0.5": {
+      "CustomerLibrary/1.0.6": {
         "dependencies": {
           "Asp.Versioning.Http": "6.5.0",
           "Asp.Versioning.Mvc": "6.4.1",
@@ -5182,12 +5182,12 @@
       "path": "csvhelper/29.0.0",
       "hashPath": "csvhelper.29.0.0.nupkg.sha512"
     },
-    "CustomerLibrary/1.0.5": {
+    "CustomerLibrary/1.0.6": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-fh4kZxKP5pgFZbD411yrOmpJYpuYJQ+8NOxn1LC3Y0nEhSvaMRKDa3ZFFvygFTFSII6UP3SG4Yx0QGwxdQyb2A==",
-      "path": "customerlibrary/1.0.5",
-      "hashPath": "customerlibrary.1.0.5.nupkg.sha512"
+      "sha512": "sha512-wiN2l006OJbONpP6d4tl0GQCTKP8gGnMoH5UW+7tMw/jDVYP4qJlDUzozPthR9wtmj0zSfpud0lUD7BOTK03kA==",
+      "path": "customerlibrary/1.0.6",
+      "hashPath": "customerlibrary.1.0.6.nupkg.sha512"
     },
     "Dapper/2.0.123": {
       "type": "package",
