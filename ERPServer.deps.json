@@ -13,7 +13,7 @@
           "EPPlus": "6.0.8",
           "ERPServer.DataAccess": "1.0.0",
           "ERPServer.Models": "1.0.0",
-          "IMSCustomFieldExtentions": "1.0.3",
+          "IMSCustomFieldExtentions": "1.0.4",
           "MailKit": "3.4.1",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.10",
           "Microsoft.AspNetCore.Hosting.Abstractions": "2.2.0",
@@ -215,16 +215,12 @@
           }
         }
       },
-      "IMSCustomFieldExtentions/1.0.3": {
+      "IMSCustomFieldExtentions/1.0.4": {
         "dependencies": {
           "System.Text.Json": "6.0.5"
         },
         "runtime": {
           "lib/netstandard2.1/IMSCustomFieldExtentions.dll": {
-            "assemblyVersion": "1.0.3.0",
-            "fileVersion": "1.0.3.0"
-          },
-          "lib/netstandard2.1/IMSCustomFieldExtentions2.dll": {
             "assemblyVersion": "1.0.3.0",
             "fileVersion": "1.0.3.0"
           }
@@ -3642,7 +3638,7 @@
           "ERPServer.Models": "1.0.0",
           "ExcelDataReader": "3.6.0",
           "ExcelDataReader.DataSet": "3.6.0",
-          "IMSCustomFieldExtentions": "1.0.3",
+          "IMSCustomFieldExtentions": "1.0.4",
           "MailKit": "3.4.1",
           "Mapster": "7.3.0",
           "Microsoft.AspNetCore.SignalR": "1.1.0",
@@ -3743,7 +3739,7 @@
       "ImsPosLibraryCore.Models/1.0.0": {
         "dependencies": {
           "Dapper.Contrib": "2.0.78",
-          "IMSCustomFieldExtentions": "1.0.3",
+          "IMSCustomFieldExtentions": "1.0.4",
           "MailKit": "3.4.1",
           "Newtonsoft.Json": "13.0.3",
           "System.Data.DataSetExtensions": "4.5.0",
@@ -3876,12 +3872,12 @@
       "path": "humanizer.core/2.2.0",
       "hashPath": "humanizer.core.2.2.0.nupkg.sha512"
     },
-    "IMSCustomFieldExtentions/1.0.3": {
+    "IMSCustomFieldExtentions/1.0.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-fUmSKgxVrbZfDGCOMDUmF6KJafXTDRVUxGPX0TB1+gLtBWoasdDzmpAjlV96z/kGDI6HrV/UCXw164DFN7sBoQ==",
-      "path": "imscustomfieldextentions/1.0.3",
-      "hashPath": "imscustomfieldextentions.1.0.3.nupkg.sha512"
+      "sha512": "sha512-2EdHf7xcV9nUYzXz/OrZ+WUb9MrpIN653YOccX+b63GCN3tlK2g3N8JIF4/xMPk9s+9uCtJ5CQDuI49YCKYbNg==",
+      "path": "imscustomfieldextentions/1.0.4",
+      "hashPath": "imscustomfieldextentions.1.0.4.nupkg.sha512"
     },
     "itext7/7.1.10": {
       "type": "package",
