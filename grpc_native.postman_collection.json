@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "b2c3d4e5-f6a7-8901-bcde-f23456789012",
+		"name": "grpcCacheService gRPC Native Collection",
+		"description": "Dedicated gRPC Collection for Port 50051 testing AccountCacheService and MenuitemCacheService.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AccountCacheService (Port 50051)",
+			"item": [
+				{
+					"name": "1. HealthCheck",
+					"request": {
+						"method": "POST",
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "127.0.0.1:50051/account.AccountCacheService/HealthCheck",
+							"host": ["127.0.0.1"],
+							"port": "50051",
+							"path": ["account.AccountCacheService", "HealthCheck"]
+						}
+					}
+				},
+				{
+					"name": "2. GetAccountPagedListByMapId",
+					"request": {
+						"method": "POST",
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"trace_id\": \"postman-grpc-001\",\n  \"current_page\": 1,\n  \"max_result_count\": 10,\n  \"map_key\": \"ACLIST\"\n}"
+						},
+						"url": {
+							"raw": "127.0.0.1:50051/account.AccountCacheService/GetAccountPagedListByMapId",
+							"host": ["127.0.0.1"],
+							"port": "50051",
+							"path": ["account.AccountCacheService", "GetAccountPagedListByMapId"]
+						}
+					}
+				},
+				{
+					"name": "3. UpsertAccount (Write-Through)",
+					"request": {
+						"method": "POST",
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"account\": {\n    \"acid\": \"AC99999\",\n    \"accode\": \"ACC-TEST-999\",\n    \"acname\": \"Test Customer Account via gRPC\",\n    \"address\": \"Kathmandu\",\n    \"type\": \"A\",\n    \"opbal\": 0.0,\n    \"isactive\": 1\n  }\n}"
+						},
+						"url": {
+							"raw": "127.0.0.1:50051/account.AccountCacheService/UpsertAccount",
+							"host": ["127.0.0.1"],
+							"port": "50051",
+							"path": ["account.AccountCacheService", "UpsertAccount"]
+						}
+					}
+				},
+				{
+					"name": "4. FlushCache (Account Reload)",
+					"request": {
+						"method": "POST",
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"connection_string\": \"\"\n}"
+						},
+						"url": {
+							"raw": "127.0.0.1:50051/account.AccountCacheService/FlushCache",
+							"host": ["127.0.0.1"],
+							"port": "50051",
+							"path": ["account.AccountCacheService", "FlushCache"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "MenuitemCacheService (Port 50051)",
+			"item": [
+				{
+					"name": "1. HealthCheck",
+					"request": {
+						"method": "POST",
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "127.0.0.1:50051/menuitem.MenuitemCacheService/HealthCheck",
+							"host": ["127.0.0.1"],
+							"port": "50051",
+							"path": ["menuitem.MenuitemCacheService", "HealthCheck"]
+						}
+					}
+				},
+				{
+					"name": "2. GetMenuitemWithStockPagedList",
+					"request": {
+						"method": "POST",
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"trace_id\": \"postman-grpc-002\",\n  \"current_page\": 1,\n  \"max_result_count\": 10,\n  \"search_text\": \"\"\n}"
+						},
+						"url": {
+							"raw": "127.0.0.1:50051/menuitem.MenuitemCacheService/GetMenuitemWithStockPagedList",
+							"host": ["127.0.0.1"],
+							"port": "50051",
+							"path": ["menuitem.MenuitemCacheService", "GetMenuitemWithStockPagedList"]
+						}
+					}
+				},
+				{
+					"name": "3. UpsertMenuItem (Write-Through)",
+					"request": {
+						"method": "POST",
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"item\": {\n    \"mcode\": \"MC99999\",\n    \"menucode\": \"ITEM-TEST-999\",\n    \"desca\": \"Test Item via gRPC\",\n    \"rate\": 150.0,\n    \"isactive\": 1\n  }\n}"
+						},
+						"url": {
+							"raw": "127.0.0.1:50051/menuitem.MenuitemCacheService/UpsertMenuItem",
+							"host": ["127.0.0.1"],
+							"port": "50051",
+							"path": ["menuitem.MenuitemCacheService", "UpsertMenuItem"]
+						}
+					}
+				},
+				{
+					"name": "4. FlushCache (Catalog Reload)",
+					"request": {
+						"method": "POST",
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"connection_string\": \"\"\n}"
+						},
+						"url": {
+							"raw": "127.0.0.1:50051/menuitem.MenuitemCacheService/FlushCache",
+							"host": ["127.0.0.1"],
+							"port": "50051",
+							"path": ["menuitem.MenuitemCacheService", "FlushCache"]
+						}
+					}
+				}
+			]
+		}
+	]
+}
