@@ -22,7 +22,7 @@
           "ERPServer.DataAccess": "1.0.0",
           "ERPServer.ExcelExport": "1.0.7",
           "ERPServer.Models": "1.0.0",
-          "GrpcCacheClientHelper": "1.0.1",
+          "GrpcCacheClientHelper": "1.0.2",
           "HotChocolate.AspNetCore": "14.3.0",
           "IMS.JwtAuth.Library": "1.0.0",
           "IMSCustomFieldExtentions": "1.0.4",
@@ -249,7 +249,7 @@
           "Carter": "6.1.1",
           "Dapper": "2.0.123",
           "ERPServer.DataAccess": "1.0.0",
-          "GrpcCacheClientHelper": "1.0.1",
+          "GrpcCacheClientHelper": "1.0.2",
           "ImsPosLibraryCore.BusinessModels": "1.0.0",
           "ImsPosLibraryCore.Models": "1.0.0",
           "MediatR": "12.0.1",
@@ -432,7 +432,7 @@
           }
         }
       },
-      "GrpcCacheClientHelper/1.0.1": {
+      "GrpcCacheClientHelper/1.0.2": {
         "dependencies": {
           "Dapper": "2.0.123",
           "Google.Protobuf": "3.26.1",
@@ -445,8 +445,8 @@
         },
         "runtime": {
           "lib/net6.0/GrpcCacheClientHelper.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
+            "assemblyVersion": "1.0.2.0",
+            "fileVersion": "1.0.2.0"
           }
         }
       },
@@ -5046,7 +5046,7 @@
       "ImsPosLibraryCore.BusinessModels/1.0.0": {
         "dependencies": {
           "Dapper.Contrib": "2.0.78",
-          "GrpcCacheClientHelper": "1.0.1",
+          "GrpcCacheClientHelper": "1.0.2",
           "ImsPosLibraryCore.Core": "1.0.0",
           "ImsPosLibraryCore.DataAccessLayer": "1.0.0",
           "ImsPosLibraryCore.Models": "1.0.0",
@@ -5363,12 +5363,12 @@
       "path": "grpc.net.common/2.62.0",
       "hashPath": "grpc.net.common.2.62.0.nupkg.sha512"
     },
-    "GrpcCacheClientHelper/1.0.1": {
+    "GrpcCacheClientHelper/1.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-42rDpva8va1ZImlWB/xAmTq5R2Mwc8CN0zfV1DDa0iXsdvWzJxu6rm/P5gofNQ7hpNwNAU5+LHQr2DF7q8fKbQ==",
-      "path": "grpccacheclienthelper/1.0.1",
-      "hashPath": "grpccacheclienthelper.1.0.1.nupkg.sha512"
+      "sha512": "sha512-miH8hUX8PgKktgEiwn0rscKuKtoBxrNXPRswmkpo4y8aacQRwQk6oY6FxBm/t9O00CJIR9TgPnXh3wlU/W8/Mw==",
+      "path": "grpccacheclienthelper/1.0.2",
+      "hashPath": "grpccacheclienthelper.1.0.2.nupkg.sha512"
     },
     "HotChocolate/14.3.0": {
       "type": "package",
