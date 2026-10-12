@@ -22,11 +22,11 @@
           "ERPServer.DataAccess": "1.0.0",
           "ERPServer.ExcelExport": "1.0.7",
           "ERPServer.Models": "1.0.0",
-          "GrpcCacheClientHelper": "1.0.0",
+          "GrpcCacheClientHelper": "1.0.1",
           "HotChocolate.AspNetCore": "14.3.0",
           "IMS.JwtAuth.Library": "1.0.0",
           "IMSCustomFieldExtentions": "1.0.4",
-          "IMSExtentionLibrary": "1.1.8",
+          "IMSExtentionLibrary": "1.1.7",
           "MailKit": "3.4.1",
           "MediatR": "12.0.1",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.10",
@@ -188,7 +188,7 @@
       },
       "ComFunctionsLib/1.0.2": {
         "dependencies": {
-          "IMSExtentionLibrary": "1.1.8",
+          "IMSExtentionLibrary": "1.1.7",
           "Microsoft.CSharp": "4.7.0",
           "Microsoft.Extensions.Configuration": "10.0.0",
           "Microsoft.Extensions.Configuration.Xml": "9.0.0",
@@ -249,7 +249,7 @@
           "Carter": "6.1.1",
           "Dapper": "2.0.123",
           "ERPServer.DataAccess": "1.0.0",
-          "GrpcCacheClientHelper": "1.0.0",
+          "GrpcCacheClientHelper": "1.0.1",
           "ImsPosLibraryCore.BusinessModels": "1.0.0",
           "ImsPosLibraryCore.Models": "1.0.0",
           "MediatR": "12.0.1",
@@ -432,7 +432,7 @@
           }
         }
       },
-      "GrpcCacheClientHelper/1.0.0": {
+      "GrpcCacheClientHelper/1.0.1": {
         "dependencies": {
           "Dapper": "2.0.123",
           "Google.Protobuf": "3.26.1",
@@ -838,7 +838,7 @@
           }
         }
       },
-      "IMSExtentionLibrary/1.1.8": {
+      "IMSExtentionLibrary/1.1.7": {
         "dependencies": {
           "BouncyCastle.Cryptography": "2.3.1",
           "Newtonsoft.Json": "13.0.3",
@@ -851,8 +851,8 @@
         },
         "runtime": {
           "lib/netstandard2.0/IMSExtentionLibrary.dll": {
-            "assemblyVersion": "1.1.8.0",
-            "fileVersion": "1.1.8.0"
+            "assemblyVersion": "1.1.7.0",
+            "fileVersion": "1.1.7.0"
           }
         }
       },
@@ -5046,7 +5046,7 @@
       "ImsPosLibraryCore.BusinessModels/1.0.0": {
         "dependencies": {
           "Dapper.Contrib": "2.0.78",
-          "GrpcCacheClientHelper": "1.0.0",
+          "GrpcCacheClientHelper": "1.0.1",
           "ImsPosLibraryCore.Core": "1.0.0",
           "ImsPosLibraryCore.DataAccessLayer": "1.0.0",
           "ImsPosLibraryCore.Models": "1.0.0",
@@ -5247,7 +5247,7 @@
     "CustomerLibrary/1.0.16": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-r2n1F6+ejS8jVyVqRv84Om07956xcSvbRWistTZzvNbOPx9vGkAPrUzWiomOdN6+rg+QoX2SJOPRr7wYc22sEQ==",
+      "sha512": "sha512-eyaSw9xCIyfXpAvLM4F+Ay4NDpmk9i1hJ5EkU8dvEkhXZ//27zwTu/ycXVa3XVpbTf4jhByXhmm6FW+gg3jWPQ==",
       "path": "customerlibrary/1.0.16",
       "hashPath": "customerlibrary.1.0.16.nupkg.sha512"
     },
@@ -5363,12 +5363,12 @@
       "path": "grpc.net.common/2.62.0",
       "hashPath": "grpc.net.common.2.62.0.nupkg.sha512"
     },
-    "GrpcCacheClientHelper/1.0.0": {
+    "GrpcCacheClientHelper/1.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-EGi9APJ4P2HPvXQXnRqTLRrKurM+YDdoaJvTALsoBro+TxtmOkY6ApTJPPLJAF92RKT5e41jLz82urtzD7UMQA==",
-      "path": "grpccacheclienthelper/1.0.0",
-      "hashPath": "grpccacheclienthelper.1.0.0.nupkg.sha512"
+      "sha512": "sha512-42rDpva8va1ZImlWB/xAmTq5R2Mwc8CN0zfV1DDa0iXsdvWzJxu6rm/P5gofNQ7hpNwNAU5+LHQr2DF7q8fKbQ==",
+      "path": "grpccacheclienthelper/1.0.1",
+      "hashPath": "grpccacheclienthelper.1.0.1.nupkg.sha512"
     },
     "HotChocolate/14.3.0": {
       "type": "package",
@@ -5594,12 +5594,12 @@
       "path": "imscustomfieldextentions/1.0.4",
       "hashPath": "imscustomfieldextentions.1.0.4.nupkg.sha512"
     },
-    "IMSExtentionLibrary/1.1.8": {
+    "IMSExtentionLibrary/1.1.7": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-1guUkssX7spk5rf6egdlukW5Jw0FgURNsEiM2chjJkMfxd1V/V36EVR8IuXUyy2fEMylgL3BQPASpSukEIYZig==",
-      "path": "imsextentionlibrary/1.1.8",
-      "hashPath": "imsextentionlibrary.1.1.8.nupkg.sha512"
+      "sha512": "sha512-Yftbvt6KKpAiSroBRmWNUpCg/huPMzthBkWvBLEQ/xCGDrua8sJIt6sgWfLWyp273pj+H71NXpHUNzUt4UW9tA==",
+      "path": "imsextentionlibrary/1.1.7",
+      "hashPath": "imsextentionlibrary.1.1.7.nupkg.sha512"
     },
     "itext7/7.1.10": {
       "type": "package",
