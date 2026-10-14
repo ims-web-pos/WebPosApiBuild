@@ -16,7 +16,7 @@
           "Carter": "6.1.1",
           "ClosedXML": "0.95.2",
           "ComFunctionsLib": "1.0.2",
-          "CustomerLibrary": "1.0.15",
+          "CustomerLibrary": "1.0.19",
           "Dapper": "2.0.123",
           "EPPlus": "6.0.8",
           "ERPServer.DataAccess": "1.0.0",
@@ -49,7 +49,7 @@
           "Polly": "8.6.4",
           "Serilog.AspNetCore": "7.0.0",
           "Serilog.Sinks.Grafana.Loki": "8.3.0",
-          "StackExchange.Redis": "2.8.22",
+          "StackExchange.Redis": "2.10.1",
           "Swashbuckle.AspNetCore": "6.4.0",
           "System.Data.DataSetExtensions": "4.5.0",
           "System.Data.SqlClient": "4.8.4",
@@ -240,7 +240,7 @@
           }
         }
       },
-      "CustomerLibrary/1.0.15": {
+      "CustomerLibrary/1.0.19": {
         "dependencies": {
           "Asp.Versioning.Http": "6.5.0",
           "Asp.Versioning.Mvc": "6.4.1",
@@ -248,11 +248,13 @@
           "Carter": "6.1.1",
           "Dapper": "2.0.123",
           "ERPServer.DataAccess": "1.0.0",
+          "GrpcCacheClientHelper": "1.0.2",
           "ImsPosLibraryCore.BusinessModels": "1.0.0",
           "ImsPosLibraryCore.Models": "1.0.0",
           "MediatR": "12.0.1",
           "MediatR.Extensions.Microsoft.DependencyInjection": "11.0.0",
           "Newtonsoft.Json": "13.0.3",
+          "StackExchange.Redis": "2.10.1",
           "System.Data.SqlClient": "4.8.4"
         },
         "runtime": {
@@ -379,6 +381,14 @@
           }
         }
       },
+      "Google.Protobuf/3.21.12": {
+        "runtime": {
+          "lib/net5.0/Google.Protobuf.dll": {
+            "assemblyVersion": "3.21.12.0",
+            "fileVersion": "3.21.12.0"
+          }
+        }
+      },
       "GreenDonut/14.3.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0",
@@ -388,6 +398,58 @@
           "lib/net6.0/GreenDonut.dll": {
             "assemblyVersion": "14.3.0.0",
             "fileVersion": "14.3.0.0"
+          }
+        }
+      },
+      "Grpc.Core.Api/2.50.0": {
+        "dependencies": {
+          "System.Memory": "4.6.3"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Grpc.Core.Api.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.50.0.0"
+          }
+        }
+      },
+      "Grpc.Net.Client/2.50.0": {
+        "dependencies": {
+          "Grpc.Net.Common": "2.50.0",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Grpc.Net.Client.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.50.0.0"
+          }
+        }
+      },
+      "Grpc.Net.Common/2.50.0": {
+        "dependencies": {
+          "Grpc.Core.Api": "2.50.0"
+        },
+        "runtime": {
+          "lib/net6.0/Grpc.Net.Common.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.50.0.0"
+          }
+        }
+      },
+      "GrpcCacheClientHelper/1.0.2": {
+        "dependencies": {
+          "Dapper": "2.0.123",
+          "Google.Protobuf": "3.21.12",
+          "Grpc.Net.Client": "2.50.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "10.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "10.0.0",
+          "StackExchange.Redis": "2.10.1",
+          "System.Data.SqlClient": "4.8.4"
+        },
+        "runtime": {
+          "lib/net6.0/GrpcCacheClientHelper.dll": {
+            "assemblyVersion": "1.0.2.0",
+            "fileVersion": "1.0.2.0"
           }
         }
       },
@@ -3610,15 +3672,16 @@
           }
         }
       },
-      "StackExchange.Redis/2.8.22": {
+      "StackExchange.Redis/2.10.1": {
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "10.0.0",
-          "Pipelines.Sockets.Unofficial": "2.2.8"
+          "Pipelines.Sockets.Unofficial": "2.2.8",
+          "System.IO.Hashing": "9.0.10"
         },
         "runtime": {
           "lib/net6.0/StackExchange.Redis.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.8.22.13109"
+            "fileVersion": "2.10.1.65101"
           }
         }
       },
@@ -4098,11 +4161,15 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.IO.Hashing/8.0.0": {
+      "System.IO.Hashing/9.0.10": {
+        "dependencies": {
+          "System.Buffers": "4.6.1",
+          "System.Memory": "4.6.3"
+        },
         "runtime": {
-          "lib/net6.0/System.IO.Hashing.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.53103"
+          "lib/netstandard2.0/System.IO.Hashing.dll": {
+            "assemblyVersion": "9.0.0.10",
+            "fileVersion": "9.0.1025.47515"
           }
         }
       },
@@ -4906,7 +4973,7 @@
         "dependencies": {
           "Microsoft.Bcl.TimeProvider": "8.0.0",
           "System.Collections.Immutable": "8.0.0",
-          "System.IO.Hashing": "8.0.0"
+          "System.IO.Hashing": "9.0.10"
         },
         "runtime": {
           "lib/net6.0/Yarp.ReverseProxy.dll": {
@@ -4930,7 +4997,7 @@
           "Newtonsoft.Json": "13.0.3",
           "RabbitMQ.Client": "7.1.2",
           "Slapper.AutoMapper": "2.0.5",
-          "StackExchange.Redis": "2.8.22",
+          "StackExchange.Redis": "2.10.1",
           "System.Data.DataSetExtensions": "4.5.0",
           "System.Data.SqlClient": "4.8.4",
           "iTextSharp": "5.5.13.3"
@@ -4971,7 +5038,7 @@
           "Microsoft.Extensions.Logging.Abstractions": "10.0.0",
           "Microsoft.Extensions.Options": "10.0.0",
           "Newtonsoft.Json": "13.0.3",
-          "StackExchange.Redis": "2.8.22",
+          "StackExchange.Redis": "2.10.1",
           "System.Data.SqlClient": "4.8.4",
           "System.IdentityModel.Tokens.Jwt": "6.25.0"
         },
@@ -5183,12 +5250,12 @@
       "path": "csvhelper/29.0.0",
       "hashPath": "csvhelper.29.0.0.nupkg.sha512"
     },
-    "CustomerLibrary/1.0.15": {
+    "CustomerLibrary/1.0.19": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-X/07V35yM65YV2bfC7LxS5ElSmcMNse4l0uIj9O91O2iXkT/agQeL4XKzFf16mXBn0HIFLKLPrtxAymYWMrxyg==",
-      "path": "customerlibrary/1.0.15",
-      "hashPath": "customerlibrary.1.0.15.nupkg.sha512"
+      "sha512": "sha512-LKPOrYd1CPPsPUcngthIINGwhXtH73W0jTHyNhaRZq5Fh6qiQ5BO72ZPogXy/3wYWtfSMmeDZhZwUrrfXso8yA==",
+      "path": "customerlibrary/1.0.19",
+      "hashPath": "customerlibrary.1.0.19.nupkg.sha512"
     },
     "Dapper/2.0.123": {
       "type": "package",
@@ -5267,12 +5334,47 @@
       "path": "fluentvalidation/10.3.6",
       "hashPath": "fluentvalidation.10.3.6.nupkg.sha512"
     },
+    "Google.Protobuf/3.21.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1TXWxQy0PDDM1NC/LojlX4YVh7NhOvvyriCfERzeUVTp0XNXv8mo/AyWxDYCvMQ9xRZHUVdWoE4/B8ridP8Btg==",
+      "path": "google.protobuf/3.21.12",
+      "hashPath": "google.protobuf.3.21.12.nupkg.sha512"
+    },
     "GreenDonut/14.3.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-X7aJl2f3Dp/BkQGHvHPxA8/MDERuJWmd8u4UVeKg0LAQrJqpI15tFMzz8nPqlbNOCy834hgNkofdhdz9xW8lBw==",
       "path": "greendonut/14.3.0",
       "hashPath": "greendonut.14.3.0.nupkg.sha512"
+    },
+    "Grpc.Core.Api/2.50.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ECZr0AqUobCIfxPYm07D/IqMbGd+Vu9KquRLLY1kMzc/xWZdqqiK0jA6t6Y5gate3lV4EiH53cvfcb6anritQg==",
+      "path": "grpc.core.api/2.50.0",
+      "hashPath": "grpc.core.api.2.50.0.nupkg.sha512"
+    },
+    "Grpc.Net.Client/2.50.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FEQ4KdsIlknEH/8z64Im5soEdVYsHBShIGSS3CUS+KXxdtL6/uNhYx4CBE+SXoGofvetwR/dW9QGmBXu3v+enQ==",
+      "path": "grpc.net.client/2.50.0",
+      "hashPath": "grpc.net.client.2.50.0.nupkg.sha512"
+    },
+    "Grpc.Net.Common/2.50.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xRoZfo74Cgrr/c/4Y6YCyCiKxz5JLMAi8c9nPhy1vrNXvNjj2Sdd/kSySi9VlZZbMHoDBTcn5ZlPumDPDirnHw==",
+      "path": "grpc.net.common/2.50.0",
+      "hashPath": "grpc.net.common.2.50.0.nupkg.sha512"
+    },
+    "GrpcCacheClientHelper/1.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-miH8hUX8PgKktgEiwn0rscKuKtoBxrNXPRswmkpo4y8aacQRwQk6oY6FxBm/t9O00CJIR9TgPnXh3wlU/W8/Mw==",
+      "path": "grpccacheclienthelper/1.0.2",
+      "hashPath": "grpccacheclienthelper.1.0.2.nupkg.sha512"
     },
     "HotChocolate/14.3.0": {
       "type": "package",
@@ -7010,12 +7112,12 @@
       "path": "slapper.automapper/2.0.5",
       "hashPath": "slapper.automapper.2.0.5.nupkg.sha512"
     },
-    "StackExchange.Redis/2.8.22": {
+    "StackExchange.Redis/2.10.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-GRA97f4cHYxBI/fKOfgs3GyKklc5is6YKM2yWbkiCZGR/JKsXIo0sRJSSeJabriJAZkKFthM0rXnULFfSbs0KA==",
-      "path": "stackexchange.redis/2.8.22",
-      "hashPath": "stackexchange.redis.2.8.22.nupkg.sha512"
+      "sha512": "sha512-se08WZvD42H3bV4XBW07pupTiE2/72qStKyi/lRqqcijksFWfRtwLTuhFtZ4OX19f4+we/2qruFZBXYJBFc8PQ==",
+      "path": "stackexchange.redis/2.10.1",
+      "hashPath": "stackexchange.redis.2.10.1.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore/6.4.0": {
       "type": "package",
@@ -7304,12 +7406,12 @@
       "path": "system.io.filesystem.primitives/4.3.0",
       "hashPath": "system.io.filesystem.primitives.4.3.0.nupkg.sha512"
     },
-    "System.IO.Hashing/8.0.0": {
+    "System.IO.Hashing/9.0.10": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ne1843evDugl0md7Fjzy6QjJrzsjh46ZKbhf8GwBXb5f/gw97J4bxMs0NQKifDuThh/f0bZ0e62NPl1jzTuRqA==",
-      "path": "system.io.hashing/8.0.0",
-      "hashPath": "system.io.hashing.8.0.0.nupkg.sha512"
+      "sha512": "sha512-9gv5z71xaWWmcGEs4bXdreIhKp2kYLK2fvPK5gQkgnWMYvZ8ieaxKofDjxL3scZiEYfi/yW2nJTiKV2awcWEdA==",
+      "path": "system.io.hashing/9.0.10",
+      "hashPath": "system.io.hashing.9.0.10.nupkg.sha512"
     },
     "System.IO.Packaging/4.0.0": {
       "type": "package",
