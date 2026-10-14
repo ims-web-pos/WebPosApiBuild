@@ -16,11 +16,11 @@
           "Carter": "6.1.1",
           "ClosedXML": "0.95.2",
           "ComFunctionsLib": "1.0.2",
-          "CustomerLibrary": "1.0.14",
+          "CustomerLibrary": "1.0.15",
           "Dapper": "2.0.123",
           "EPPlus": "6.0.8",
           "ERPServer.DataAccess": "1.0.0",
-          "ERPServer.ExcelExport": "1.0.7",
+          "ERPServer.ExcelExport": "1.0.8",
           "ERPServer.Models": "1.0.0",
           "HotChocolate.AspNetCore": "14.3.0",
           "IMS.JwtAuth.Library": "1.0.0",
@@ -240,7 +240,7 @@
           }
         }
       },
-      "CustomerLibrary/1.0.14": {
+      "CustomerLibrary/1.0.15": {
         "dependencies": {
           "Asp.Versioning.Http": "6.5.0",
           "Asp.Versioning.Mvc": "6.4.1",
@@ -329,12 +329,13 @@
           }
         }
       },
-      "ERPServer.ExcelExport/1.0.7": {
+      "ERPServer.ExcelExport/1.0.8": {
         "dependencies": {
           "ClosedXML": "0.95.2",
           "Dapper": "2.0.123",
           "ExcelDataReader": "3.6.0",
-          "ExcelDataReader.DataSet": "3.6.0"
+          "ExcelDataReader.DataSet": "3.6.0",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.3.13"
         },
         "runtime": {
           "lib/net6.0/ERPServer.ExcelExport.dll": {
@@ -991,7 +992,7 @@
       "Microsoft.AspNetCore.Antiforgery/2.2.0": {
         "dependencies": {
           "Microsoft.AspNetCore.DataProtection": "2.2.0",
-          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.3.13",
           "Microsoft.AspNetCore.Http.Extensions": "2.2.0",
           "Microsoft.AspNetCore.WebUtilities": "2.2.0",
           "Microsoft.Extensions.ObjectPool": "7.0.0"
@@ -999,7 +1000,7 @@
       },
       "Microsoft.AspNetCore.Authentication.Abstractions/2.2.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.3.13",
           "Microsoft.Extensions.Logging.Abstractions": "10.0.0",
           "Microsoft.Extensions.Options": "10.0.0"
         }
@@ -1036,7 +1037,7 @@
       },
       "Microsoft.AspNetCore.Connections.Abstractions/2.2.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Features": "2.2.0",
+          "Microsoft.AspNetCore.Http.Features": "2.3.12",
           "System.IO.Pipelines": "8.0.0"
         }
       },
@@ -1068,34 +1069,34 @@
       "Microsoft.AspNetCore.Hosting.Abstractions/2.2.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Hosting.Server.Abstractions": "2.2.0",
-          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.3.13",
           "Microsoft.Extensions.Hosting.Abstractions": "8.0.0"
         }
       },
       "Microsoft.AspNetCore.Hosting.Server.Abstractions/2.2.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Features": "2.2.0",
+          "Microsoft.AspNetCore.Http.Features": "2.3.12",
           "Microsoft.Extensions.Configuration.Abstractions": "10.0.0"
         }
       },
       "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
         "dependencies": {
-          "System.Text.Encodings.Web": "7.0.0"
+          "System.Text.Encodings.Web": "8.0.0"
         }
       },
       "Microsoft.AspNetCore.Http/2.2.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.3.13",
           "Microsoft.AspNetCore.WebUtilities": "2.2.0",
           "Microsoft.Extensions.ObjectPool": "7.0.0",
           "Microsoft.Extensions.Options": "10.0.0",
           "Microsoft.Net.Http.Headers": "2.2.0"
         }
       },
-      "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
+      "Microsoft.AspNetCore.Http.Abstractions/2.3.13": {
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Features": "2.2.0",
-          "System.Text.Encodings.Web": "7.0.0"
+          "Microsoft.AspNetCore.Http.Features": "2.3.12",
+          "System.Text.Encodings.Web": "8.0.0"
         }
       },
       "Microsoft.AspNetCore.Http.Connections/1.1.0": {
@@ -1119,13 +1120,13 @@
       },
       "Microsoft.AspNetCore.Http.Extensions/2.2.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.3.13",
           "Microsoft.Extensions.FileProviders.Abstractions": "9.0.0",
           "Microsoft.Net.Http.Headers": "2.2.0",
           "System.Buffers": "4.6.1"
         }
       },
-      "Microsoft.AspNetCore.Http.Features/2.2.0": {
+      "Microsoft.AspNetCore.Http.Features/2.3.12": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "10.0.0"
         }
@@ -1335,7 +1336,7 @@
       },
       "Microsoft.AspNetCore.Routing.Abstractions/2.2.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0"
+          "Microsoft.AspNetCore.Http.Abstractions": "2.3.13"
         }
       },
       "Microsoft.AspNetCore.SignalR/1.1.0": {
@@ -1391,7 +1392,7 @@
       "Microsoft.AspNetCore.WebUtilities/2.2.0": {
         "dependencies": {
           "Microsoft.Net.Http.Headers": "2.2.0",
-          "System.Text.Encodings.Web": "7.0.0"
+          "System.Text.Encodings.Web": "8.0.0"
         }
       },
       "Microsoft.Azure.Mobile.Server/2.0.3": {
@@ -2505,7 +2506,7 @@
       },
       "Microsoft.Extensions.DependencyModel/7.0.0": {
         "dependencies": {
-          "System.Text.Encodings.Web": "7.0.0",
+          "System.Text.Encodings.Web": "8.0.0",
           "System.Text.Json": "7.0.0"
         },
         "runtime": {
@@ -2707,7 +2708,7 @@
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0",
           "Microsoft.Extensions.Options": "10.0.0",
-          "System.Text.Encodings.Web": "7.0.0"
+          "System.Text.Encodings.Web": "8.0.0"
         }
       },
       "Microsoft.Identity.Client/3.0.8": {
@@ -4726,29 +4727,29 @@
           "System.Text.Encoding": "4.3.0"
         }
       },
-      "System.Text.Encodings.Web/7.0.0": {
+      "System.Text.Encodings.Web/8.0.0": {
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "6.1.2"
         },
         "runtime": {
           "lib/net6.0/System.Text.Encodings.Web.dll": {
-            "assemblyVersion": "7.0.0.0",
-            "fileVersion": "7.0.22.51805"
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
           }
         },
         "runtimeTargets": {
           "runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll": {
             "rid": "browser",
             "assetType": "runtime",
-            "assemblyVersion": "7.0.0.0",
-            "fileVersion": "7.0.22.51805"
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
           }
         }
       },
       "System.Text.Json/7.0.0": {
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "6.1.2",
-          "System.Text.Encodings.Web": "7.0.0"
+          "System.Text.Encodings.Web": "8.0.0"
         },
         "runtime": {
           "lib/net6.0/System.Text.Json.dll": {
@@ -4963,7 +4964,7 @@
           "ImsPosLibraryCore.Core": "1.0.0",
           "MailKit": "3.4.1",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.10",
-          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.3.13",
           "Microsoft.Extensions.Caching.Memory": "6.0.1",
           "Microsoft.Extensions.Configuration.Abstractions": "10.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0",
@@ -5182,12 +5183,12 @@
       "path": "csvhelper/29.0.0",
       "hashPath": "csvhelper.29.0.0.nupkg.sha512"
     },
-    "CustomerLibrary/1.0.14": {
+    "CustomerLibrary/1.0.15": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-YdfvVaoRNt+H83F4xe1NG1atvQzuNZbQhPscosyoevcCtRJb+CE1POqULnkguPBkkZe8hhLJm+H4rCfbLenHyw==",
-      "path": "customerlibrary/1.0.14",
-      "hashPath": "customerlibrary.1.0.14.nupkg.sha512"
+      "sha512": "sha512-X/07V35yM65YV2bfC7LxS5ElSmcMNse4l0uIj9O91O2iXkT/agQeL4XKzFf16mXBn0HIFLKLPrtxAymYWMrxyg==",
+      "path": "customerlibrary/1.0.15",
+      "hashPath": "customerlibrary.1.0.15.nupkg.sha512"
     },
     "Dapper/2.0.123": {
       "type": "package",
@@ -5231,12 +5232,12 @@
       "path": "epplus.system.drawing/6.0.0",
       "hashPath": "epplus.system.drawing.6.0.0.nupkg.sha512"
     },
-    "ERPServer.ExcelExport/1.0.7": {
+    "ERPServer.ExcelExport/1.0.8": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-YiECaAn9F+5eSE5POj/XAdg7+3L4uU1MKJLX4MIi62wt1I1BtfKvEzhAjU2ANHFtKnM+oTQtOw6zeRg+joSrfA==",
-      "path": "erpserver.excelexport/1.0.7",
-      "hashPath": "erpserver.excelexport.1.0.7.nupkg.sha512"
+      "sha512": "sha512-tbBVAN0gWIQr7e3N7p5Tgx0BCC3op/KC34G6T8PjtjBJmZuoAlO8vdhvcnw++NsTH5KWXIM41ER5xN+8HHSxUA==",
+      "path": "erpserver.excelexport/1.0.8",
+      "hashPath": "erpserver.excelexport.1.0.8.nupkg.sha512"
     },
     "ExcelDataReader/3.6.0": {
       "type": "package",
@@ -5714,12 +5715,12 @@
       "path": "microsoft.aspnetcore.http/2.2.0",
       "hashPath": "microsoft.aspnetcore.http.2.2.0.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
+    "Microsoft.AspNetCore.Http.Abstractions/2.3.13": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Nxs7Z1q3f1STfLYKJSVXCs1iBl+Ya6E8o4Oy1bCxJ/rNI44E/0f6tbsrVqAWfB7jlnJfyaAtIalBVxPKUPQb4Q==",
-      "path": "microsoft.aspnetcore.http.abstractions/2.2.0",
-      "hashPath": "microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512"
+      "sha512": "sha512-V40/i3RzwjOpC7aUXkWYac45lD5o/HH/BF6KDgWpto/YWGHW9oHd4OSYg+WkaZxZYXxF4t2fRUWA4KyyABxw8g==",
+      "path": "microsoft.aspnetcore.http.abstractions/2.3.13",
+      "hashPath": "microsoft.aspnetcore.http.abstractions.2.3.13.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Http.Connections/1.1.0": {
       "type": "package",
@@ -5742,12 +5743,12 @@
       "path": "microsoft.aspnetcore.http.extensions/2.2.0",
       "hashPath": "microsoft.aspnetcore.http.extensions.2.2.0.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Http.Features/2.2.0": {
+    "Microsoft.AspNetCore.Http.Features/2.3.12": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ziFz5zH8f33En4dX81LW84I6XrYXKf9jg6aM39cM+LffN9KJahViKZ61dGMSO2gd3e+qe5yBRwsesvyqlZaSMg==",
-      "path": "microsoft.aspnetcore.http.features/2.2.0",
-      "hashPath": "microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512"
+      "sha512": "sha512-Lq3xByu3oBaIPJrKhL8NIRTwQO177NhztvBG6FBoajnxeDIZn2N5vzfDjcp7eQcyPbWPm9G1yMEi9ah+yMR7kw==",
+      "path": "microsoft.aspnetcore.http.features/2.3.12",
+      "hashPath": "microsoft.aspnetcore.http.features.2.3.12.nupkg.sha512"
     },
     "Microsoft.AspNetCore.JsonPatch/6.0.10": {
       "type": "package",
@@ -7702,12 +7703,12 @@
       "path": "system.text.encoding.extensions/4.3.0",
       "hashPath": "system.text.encoding.extensions.4.3.0.nupkg.sha512"
     },
-    "System.Text.Encodings.Web/7.0.0": {
+    "System.Text.Encodings.Web/8.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-OP6umVGxc0Z0MvZQBVigj4/U31Pw72ITihDWP9WiWDm+q5aoe0GaJivsfYGq53o6dxH7DcXWiCTl7+0o2CGdmg==",
-      "path": "system.text.encodings.web/7.0.0",
-      "hashPath": "system.text.encodings.web.7.0.0.nupkg.sha512"
+      "sha512": "sha512-yev/k9GHAEGx2Rg3/tU6MQh4HGBXJs70y7j1LaM1i/ER9po+6nnQ6RRqTJn1E7Xu0fbIFK80Nh5EoODxrbxwBQ==",
+      "path": "system.text.encodings.web/8.0.0",
+      "hashPath": "system.text.encodings.web.8.0.0.nupkg.sha512"
     },
     "System.Text.Json/7.0.0": {
       "type": "package",
