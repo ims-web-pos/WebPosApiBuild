@@ -22,6 +22,7 @@
           "ERPServer.DataAccess": "1.0.0",
           "ERPServer.ExcelExport": "1.0.8",
           "ERPServer.Models": "1.0.0",
+          "GrpcCacheClientHelper": "1.0.2",
           "HotChocolate.AspNetCore": "14.3.0",
           "IMS.JwtAuth.Library": "1.0.0",
           "IMSCustomFieldExtentions": "1.0.4",
@@ -381,11 +382,11 @@
           }
         }
       },
-      "Google.Protobuf/3.21.12": {
+      "Google.Protobuf/3.26.1": {
         "runtime": {
           "lib/net5.0/Google.Protobuf.dll": {
-            "assemblyVersion": "3.21.12.0",
-            "fileVersion": "3.21.12.0"
+            "assemblyVersion": "3.26.1.0",
+            "fileVersion": "3.26.1.0"
           }
         }
       },
@@ -401,45 +402,42 @@
           }
         }
       },
-      "Grpc.Core.Api/2.50.0": {
-        "dependencies": {
-          "System.Memory": "4.6.3"
-        },
+      "Grpc.Core.Api/2.62.0": {
         "runtime": {
           "lib/netstandard2.1/Grpc.Core.Api.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.50.0.0"
+            "fileVersion": "2.62.0.0"
           }
         }
       },
-      "Grpc.Net.Client/2.50.0": {
+      "Grpc.Net.Client/2.62.0": {
         "dependencies": {
-          "Grpc.Net.Common": "2.50.0",
+          "Grpc.Net.Common": "2.62.0",
           "Microsoft.Extensions.Logging.Abstractions": "10.0.0"
         },
         "runtime": {
           "lib/net6.0/Grpc.Net.Client.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.50.0.0"
+            "fileVersion": "2.62.0.0"
           }
         }
       },
-      "Grpc.Net.Common/2.50.0": {
+      "Grpc.Net.Common/2.62.0": {
         "dependencies": {
-          "Grpc.Core.Api": "2.50.0"
+          "Grpc.Core.Api": "2.62.0"
         },
         "runtime": {
           "lib/net6.0/Grpc.Net.Common.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.50.0.0"
+            "fileVersion": "2.62.0.0"
           }
         }
       },
       "GrpcCacheClientHelper/1.0.2": {
         "dependencies": {
           "Dapper": "2.0.123",
-          "Google.Protobuf": "3.21.12",
-          "Grpc.Net.Client": "2.50.0",
+          "Google.Protobuf": "3.26.1",
+          "Grpc.Net.Client": "2.62.0",
           "Microsoft.Extensions.Configuration.Abstractions": "10.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "10.0.0",
@@ -4988,6 +4986,8 @@
           "ERPServer.Models": "1.0.0",
           "ExcelDataReader": "3.6.0",
           "ExcelDataReader.DataSet": "3.6.0",
+          "Google.Protobuf": "3.26.1",
+          "Grpc.Net.Client": "2.62.0",
           "HotChocolate.AspNetCore": "14.3.0",
           "IMSCustomFieldExtentions": "1.0.4",
           "MailKit": "3.4.1",
@@ -5052,11 +5052,11 @@
       "ImsPosLibraryCore.BusinessModels/1.0.0": {
         "dependencies": {
           "Dapper.Contrib": "2.0.78",
+          "GrpcCacheClientHelper": "1.0.2",
           "ImsPosLibraryCore.Core": "1.0.0",
           "ImsPosLibraryCore.DataAccessLayer": "1.0.0",
           "ImsPosLibraryCore.Models": "1.0.0",
-          "MailKit": "3.4.1",
-          "System.Data.DataSetExtensions": "4.5.0"
+          "MailKit": "3.4.1"
         },
         "runtime": {
           "ImsPosLibraryCore.BusinessModels.dll": {
@@ -5334,12 +5334,12 @@
       "path": "fluentvalidation/10.3.6",
       "hashPath": "fluentvalidation.10.3.6.nupkg.sha512"
     },
-    "Google.Protobuf/3.21.12": {
+    "Google.Protobuf/3.26.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-1TXWxQy0PDDM1NC/LojlX4YVh7NhOvvyriCfERzeUVTp0XNXv8mo/AyWxDYCvMQ9xRZHUVdWoE4/B8ridP8Btg==",
-      "path": "google.protobuf/3.21.12",
-      "hashPath": "google.protobuf.3.21.12.nupkg.sha512"
+      "sha512": "sha512-CHZX8zXqhF/fdUtd+AYzew8T2HFkAoe5c7lbGxZY/qryAlQXckDvM5BfOJjXlMS7kyICqQTMszj4w1bX5uBJ/w==",
+      "path": "google.protobuf/3.26.1",
+      "hashPath": "google.protobuf.3.26.1.nupkg.sha512"
     },
     "GreenDonut/14.3.0": {
       "type": "package",
@@ -5348,26 +5348,26 @@
       "path": "greendonut/14.3.0",
       "hashPath": "greendonut.14.3.0.nupkg.sha512"
     },
-    "Grpc.Core.Api/2.50.0": {
+    "Grpc.Core.Api/2.62.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ECZr0AqUobCIfxPYm07D/IqMbGd+Vu9KquRLLY1kMzc/xWZdqqiK0jA6t6Y5gate3lV4EiH53cvfcb6anritQg==",
-      "path": "grpc.core.api/2.50.0",
-      "hashPath": "grpc.core.api.2.50.0.nupkg.sha512"
+      "sha512": "sha512-q4Jj6bRZHNnE4CMLqgjiBUCKLit+tRr0simZsS2W6U++akd7CzXByeKy2tddqT68hFzP2XzceXA2YtBTfWtixA==",
+      "path": "grpc.core.api/2.62.0",
+      "hashPath": "grpc.core.api.2.62.0.nupkg.sha512"
     },
-    "Grpc.Net.Client/2.50.0": {
+    "Grpc.Net.Client/2.62.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-FEQ4KdsIlknEH/8z64Im5soEdVYsHBShIGSS3CUS+KXxdtL6/uNhYx4CBE+SXoGofvetwR/dW9QGmBXu3v+enQ==",
-      "path": "grpc.net.client/2.50.0",
-      "hashPath": "grpc.net.client.2.50.0.nupkg.sha512"
+      "sha512": "sha512-C7HxLt+wWPTpPFORRHkxxtDLL+K/jXSmZBaPLhFM8AEkN0bYjklIfCwnzajn1gcbRcEETBb0WnRgHJdVzpwbCg==",
+      "path": "grpc.net.client/2.62.0",
+      "hashPath": "grpc.net.client.2.62.0.nupkg.sha512"
     },
-    "Grpc.Net.Common/2.50.0": {
+    "Grpc.Net.Common/2.62.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-xRoZfo74Cgrr/c/4Y6YCyCiKxz5JLMAi8c9nPhy1vrNXvNjj2Sdd/kSySi9VlZZbMHoDBTcn5ZlPumDPDirnHw==",
-      "path": "grpc.net.common/2.50.0",
-      "hashPath": "grpc.net.common.2.50.0.nupkg.sha512"
+      "sha512": "sha512-eBv5I4RPWfdezGXqooU5hs3+XcfVMLk5XDlA4G/Nd9TMX78ZGrFl/lM1Ad187zgBLmH7WPAgfjKRWLBwaa1Wbw==",
+      "path": "grpc.net.common/2.62.0",
+      "hashPath": "grpc.net.common.2.62.0.nupkg.sha512"
     },
     "GrpcCacheClientHelper/1.0.2": {
       "type": "package",
